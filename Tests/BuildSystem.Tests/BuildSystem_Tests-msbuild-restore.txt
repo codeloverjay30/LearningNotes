@@ -1,0 +1,1196 @@
+Build started 6/29/2026 6:29:37 PM.
+Logging verbosity is set to: Detailed.     0>Process = "D:\DevTools\dotnet\dotnet.exe"
+       MSBuild executable path = "D:\DevTools\dotnet\sdk\10.0.103\MSBuild.dll"
+       Command line arguments = "D:\DevTools\dotnet\sdk\10.0.103\MSBuild.dll -maxcpucount --verbosity:m -tlp:default=auto --property:NuGetInteractive=true --target:Restore --verbosity:minimal -fl -flp:LogFile=BuildSystem_Tests-msbuild-restore.txt;verbosity=detailed;Append=false -distributedlogger:Microsoft.DotNet.Cli.Commands.MSBuild.MSBuildLogger,D:\DevTools\dotnet\sdk\10.0.103\dotnet.dll*Microsoft.DotNet.Cli.Commands.MSBuild.MSBuildForwardingLogger,D:\DevTools\dotnet\sdk\10.0.103\dotnet.dll -nologo"
+       Current directory = "D:\workspace\LearningNotes\Tests\BuildSystem.Tests"
+       MSBuild version = "18.0.11+c2435c3e0"
+       Based on the Windows registry key LongPathsEnabled, the LongPaths feature is enabled.
+       Based on the Windows registry key VerifiedAndReputablePolicyState, SAC state = 0: turned off.
+       The SDK "Microsoft.NET.Sdk" was successfully resolved by the "DefaultSdkResolver" resolver to location "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\Sdk" and version "".
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\Sdk\Sdk.props(49,11): message : Property 'MSBuildExtensionsPath' with value 'D:\DevTools\dotnet\sdk\10.0.103\' expanded from the environment.
+       D:\DevTools\dotnet\sdk\10.0.103\Current\Microsoft.Common.props(60,5): message : Property reassignment: $(MSBuildProjectExtensionsPath)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\" (previous value: "obj\") at D:\DevTools\dotnet\sdk\10.0.103\Current\Microsoft.Common.props (60,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Current\Microsoft.Common.props(84,119): message : Property 'MSBuildUserExtensionsPath' with value 'C:\Users\userJay30\AppData\Local\Microsoft\MSBuild' expanded from the environment.
+       Assembly loaded during Evaluation: System.Threading.Tasks.Parallel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Threading.Tasks.Parallel.dll, MVID: 484bafc2-9f0e-4e62-8af6-e65d5cd71f84, AssemblyLoadContext: Default)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props(90,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles}") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props (90,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props(91,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem}") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props (91,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props(92,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory};{RawFileName}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props (92,5)
+       The "DefaultSdkResolver" resolver attempted to resolve the SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator".
+       Warnings: null
+       Errors: MSB4276: The default SDK resolver failed to resolve SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator" because directory "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.SDK.WorkloadAutoImportPropsLocator\Sdk" did not exist.
+       Assembly loaded during Evaluation: Microsoft.Build.NuGetSdkResolver, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Build.NuGetSdkResolver.dll, MVID: db6aefef-493b-4de6-a593-ae519e8edd6f, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Build.NuGetSdkResolver.dll)
+       Assembly loaded during Evaluation: System.Reflection.Metadata, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Reflection.Metadata.dll, MVID: 27047d9b-17f3-4ec1-8143-6797ef25cd28, AssemblyLoadContext: Default)
+       Assembly loaded during Evaluation: NuGet.Common, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Common.dll, MVID: 9a75e9a2-ebcf-4c20-863c-86b8d21a910c, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Build.NuGetSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver, Version=10.0.103.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll, MVID: 32d497b5-3f90-4858-91ed-bef3ae025be9, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.DotNet.Cli.Utils, Version=10.0.103.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 (location: D:\DevTools\dotnet\sdk\10.0.103\Microsoft.DotNet.Cli.Utils.dll, MVID: 0c51fd09-7ce3-414f-b142-ef79f42ae85b, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.NET.Sdk.WorkloadManifestReader, Version=10.0.103.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 (location: D:\DevTools\dotnet\sdk\10.0.103\Microsoft.NET.Sdk.WorkloadManifestReader.dll, MVID: 4fc5b50b-0d78-444c-9b7f-2f8a62d0eac5, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.Deployment.DotNet.Releases, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Deployment.DotNet.Releases.dll, MVID: ea43f8b8-b27f-4976-9d85-2b4f42217a94, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       The SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator" was successfully resolved by the "Microsoft.DotNet.MSBuildWorkloadSdkResolver" resolver to location "null" and version "null".
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportPublishProfile.targets(28,5): message : Property reassignment: $(PublishProfileImported)="false" (previous value: "true") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportPublishProfile.targets (28,5)
+       Assembly loaded during Evaluation: NuGet.Frameworks, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Frameworks.dll, MVID: 1b7b49ca-9945-4cfa-824f-5d73c248e8d6, AssemblyLoadContext: Assembly.LoadFile(D:\DevTools\dotnet\sdk\10.0.103\NuGet.Frameworks.dll))
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets(81,5): message : Property reassignment: $(TargetPlatformVersion)="" (previous value: "0.0") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets (81,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets(127,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**" (previous value: ";bin\Debug\/**") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets (127,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets(142,5): message : Property reassignment: $(OutputPath)="bin\Debug\net10.0\" (previous value: "bin\Debug\") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets (142,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets(147,5): message : Property reassignment: $(IntermediateOutputPath)="obj\Debug\net10.0\" (previous value: "obj\Debug\") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets (147,5)
+       The "DefaultSdkResolver" resolver attempted to resolve the SDK "Microsoft.NET.SDK.WorkloadManifestTargetsLocator".
+       Warnings: null
+       Errors: MSB4276: The default SDK resolver failed to resolve SDK "Microsoft.NET.SDK.WorkloadManifestTargetsLocator" because directory "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.SDK.WorkloadManifestTargetsLocator\Sdk" did not exist.
+       The SDK "Microsoft.NET.SDK.WorkloadManifestTargetsLocator" was successfully resolved by the "Microsoft.DotNet.MSBuildWorkloadSdkResolver" resolver to location "D:\DevTools\dotnet\sdk-manifests\10.0.100\microsoft.net.sdk.android\36.1.2" and version "null".
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets(371,5): message : Property reassignment: $(RoslynTargetsPath)="D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\..\..\Roslyn" (previous value: "D:\DevTools\dotnet\sdk\10.0.103\Roslyn") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets (371,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Roslyn\Microsoft.Managed.Core.targets(6,5): message : Property reassignment: $(_BuildTasksDirectory)="D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\..\..\Roslyn\" (previous value: "D:\DevTools\dotnet\sdk\10.0.103\Roslyn\") at D:\DevTools\dotnet\sdk\10.0.103\Roslyn\Microsoft.Managed.Core.targets (6,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Roslyn\Microsoft.CSharp.Core.targets(200,5): message : Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion:14.0 -define:TRACE" (previous value: "-langversion:14.0") at D:\DevTools\dotnet\sdk\10.0.103\Roslyn\Microsoft.CSharp.Core.targets (200,5)
+       Assembly loaded during Evaluation: Microsoft.Build.Utilities.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Build.Utilities.Core.dll, MVID: f1451a5e-5f7f-4573-9f12-a7d129e87106, AssemblyLoadContext: Default)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(175,5): message : Property reassignment: $(_DebugSymbolsProduced)="true" (previous value: "false") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (175,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(185,5): message : Property reassignment: $(_DocumentationFileProduced)="false" (previous value: "true") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (185,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(392,5): message : Property reassignment: $(MSBuildCopyMarkerName)="BuildSys.377F9C41" (previous value: "BuildSystem.Tests.csproj") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (392,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(393,5): message : Property reassignment: $(MSBuildCopyMarkerName)="BuildSys.377F9C41.Up2Date" (previous value: "BuildSys.377F9C41") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (393,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(541,5): message : Property reassignment: $(ProcessorArchitecture)="msil" (previous value: "") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (541,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(580,5): message : Property reassignment: $(DelaySign)="" (previous value: "false") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (580,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(2606,5): message : Property 'LOCALAPPDATA' with value 'C:\Users\userJay30\AppData\Local' expanded from the environment.
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(3934,5): message : Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (3934,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(3935,5): message : Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Off" (previous value: "Auto") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (3935,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message : Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message :       AssignProjectConfiguration;
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message :       _SplitProjectReferencesByFileExistence
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message :     " (previous value: "_SplitProjectReferencesByFileExistence") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (5146,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(6959,5): message : Property 'MSBuildExtensionsPath32' with value 'D:\DevTools\dotnet\sdk\10.0.103' expanded from the environment.
+       The "NuGetInteractive" property is a global property, and cannot be modified.
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(24,5): message : Property reassignment: $(ProjectAssetsFile)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\project.assets.json" (previous value: "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\/project.assets.json") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (24,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(29,5): message : Property reassignment: $(ProjectAssetsCacheFile)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\Debug\net10.0\BuildSystem.Tests.assets.cache" (previous value: "obj\Debug\net10.0\BuildSystem.Tests.assets.cache") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (29,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message : Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ResolveProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       FindInvalidProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       GetFrameworkPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       GetReferenceAssemblyPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ResolveSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ExpandSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ResolvePackageDependenciesForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       _HandlePackageFileConflicts;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ResolveProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       FindInvalidProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       GetFrameworkPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       GetReferenceAssemblyPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ResolveSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ExpandSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (80,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message : Property reassignment: $(PrepareResourcesDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       ResolvePackageDependenciesForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       _HandlePackageFileConflicts;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       PrepareResourceNames;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       ResGen;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       CompileLicxFiles
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :     
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       PrepareResourceNames;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       ResGen;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       CompileLicxFiles
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (86,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(35,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**" (previous value: ";bin\Debug\/**;obj\Debug\/**") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (35,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(37,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (37,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(40,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (40,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(41,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (41,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(42,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (42,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(43,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.slnx" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (43,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(44,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.slnx;**/*.vssscc" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.slnx") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (44,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(45,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.slnx;**/*.vssscc;**/.DS_Store" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.slnx;**/*.vssscc") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (45,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message : Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolveProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       FindInvalidProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       GetFrameworkPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       GetReferenceAssemblyPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolveSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ExpandSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolvePackageDependenciesForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       _HandlePackageFileConflicts;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolveTargetingPackAssets;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolveProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       FindInvalidProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       GetFrameworkPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       GetReferenceAssemblyPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolveSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ExpandSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolvePackageDependenciesForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       _HandlePackageFileConflicts;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets (14,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(44,5): message : Property reassignment: $(_GenerateRuntimeConfigurationPropertyInputsCache)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\Debug\net10.0\BuildSystem.Tests.genruntimeconfig.cache" (previous value: "obj\Debug\net10.0\BuildSystem.Tests.genruntimeconfig.cache") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (44,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(46,5): message : Property reassignment: $(_GeneratePublishDependencyFilePropertyInputsCache)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\Debug\net10.0\BuildSystem.Tests.genpublishdeps.cache" (previous value: "obj\Debug\net10.0\BuildSystem.Tests.genpublishdeps.cache") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (46,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(48,5): message : Property reassignment: $(_GenerateSingleFileBundlePropertyInputsCache)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\Debug\net10.0\BuildSystem.Tests.genbundle.cache" (previous value: "obj\Debug\net10.0\BuildSystem.Tests.genbundle.cache") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (48,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(81,5): message : Property reassignment: $(GenerateRuntimeConfigDevFile)="false" (previous value: "true") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (81,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(98,5): message : Property 'USERPROFILE' with value 'C:\Users\userJay30' expanded from the environment.
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(98,5): message : Property reassignment: $(_DefaultUserProfileRuntimeStorePath)="C:\Users\userJay30" (previous value: "") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (98,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(99,5): message : Property reassignment: $(_DefaultUserProfileRuntimeStorePath)="C:\Users\userJay30\.dotnet\store" (previous value: "C:\Users\userJay30") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (99,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(144,5): message : Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32" (previous value: "Any CPU,x86,x64") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (144,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(148,5): message : Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32,ARM64" (previous value: "Any CPU,x86,x64,ARM32") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (148,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message : Property reassignment: $(CoreBuildDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       _CheckForBuildWithNoBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       BuildOnlySettings;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PreBuildEvent;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ResolveReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareResources;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ResolveKeySource;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       Compile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ExportWindowsMDFile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       UnmanagedUnregistration;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateSerializationAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       CreateSatelliteAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateManifests;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GetTargetPath;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareForRun;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       UnmanagedRegistration;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       IncrementalClean;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PostBuildEvent
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateBuildDependencyFile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateBuildRuntimeConfigurationFiles
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       BuildOnlySettings;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PreBuildEvent;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ResolveReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareResources;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ResolveKeySource;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       Compile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ExportWindowsMDFile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       UnmanagedUnregistration;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateSerializationAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       CreateSatelliteAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateManifests;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GetTargetPath;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareForRun;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       UnmanagedRegistration;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       IncrementalClean;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PostBuildEvent
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (204,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(213,5): message : Property reassignment: $(CoreCleanDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(213,5): message :       _SdkBeforeClean;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(213,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(213,5): message :     " (previous value: "") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (213,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message : Property reassignment: $(RebuildDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       _SdkBeforeRebuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       BeforeRebuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       Clean;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       Build;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       AfterRebuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :     
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       BeforeRebuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       Clean;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       Build;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       AfterRebuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (220,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message : Property reassignment: $(CompileDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       ResolveReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       ResolveKeySource;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       SetWin32ManifestProperties;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _SetPreferNativeArm64Win32ManifestProperties;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       FindReferenceAssembliesForReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _GenerateCompileInputs;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       BeforeCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _TimeStampBeforeCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _GenerateCompileDependencyCache;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       CoreCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _TimeStampAfterCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       AfterCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _CreateAppHost;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _CreateComHost;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _GetIjwHostPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       ResolveReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       ResolveKeySource;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       SetWin32ManifestProperties;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _SetPreferNativeArm64Win32ManifestProperties;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       FindReferenceAssembliesForReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _GenerateCompileInputs;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       BeforeCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _TimeStampBeforeCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _GenerateCompileDependencyCache;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       CoreCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _TimeStampAfterCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       AfterCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (799,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message : Property reassignment: $(CreateSatelliteAssembliesDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       _GenerateSatelliteAssemblyInputs;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       ComputeIntermediateSatelliteAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       GenerateSatelliteAssemblies
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       CoreGenerateSatelliteAssemblies
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       _GenerateSatelliteAssemblyInputs;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       ComputeIntermediateSatelliteAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       GenerateSatelliteAssemblies
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (1131,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.GitLab\build\Microsoft.SourceLink.GitLab.targets(12,5): message : Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.GitLab\build\Microsoft.SourceLink.GitLab.targets (12,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.GitLab\build\Microsoft.SourceLink.GitLab.targets(13,5): message : Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.GitLab\build\Microsoft.SourceLink.GitLab.targets (13,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.AzureRepos.Git\build\Microsoft.SourceLink.AzureRepos.Git.targets(12,5): message : Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.AzureRepos.Git\build\Microsoft.SourceLink.AzureRepos.Git.targets (12,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.AzureRepos.Git\build\Microsoft.SourceLink.AzureRepos.Git.targets(13,5): message : Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.AzureRepos.Git\build\Microsoft.SourceLink.AzureRepos.Git.targets (13,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.Bitbucket.Git\build\Microsoft.SourceLink.Bitbucket.Git.targets(12,5): message : Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl;_InitializeBitbucketGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.Bitbucket.Git\build\Microsoft.SourceLink.Bitbucket.Git.targets (12,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.Bitbucket.Git\build\Microsoft.SourceLink.Bitbucket.Git.targets(13,5): message : Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation;TranslateBitbucketGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.Bitbucket.Git\build\Microsoft.SourceLink.Bitbucket.Git.targets (13,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message : Property reassignment: $(DesignerRuntimeImplementationProjectOutputGroupDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       BuildOnlySettings;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       AssignTargetPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ResolveReferences
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :     
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       _GenerateDesignerDepsFile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       _GenerateDesignerRuntimeConfigFile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       GetCopyToOutputDirectoryItems;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       _GatherDesignerShadowCopyFiles;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       BuildOnlySettings;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       AssignTargetPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ResolveReferences
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :     
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets (21,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.CSharp.targets(31,5): message : Property reassignment: $(DefineConstants)="TRACE;DEBUG" (previous value: "TRACE") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.CSharp.targets (31,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.CSharp.targets(45,5): message : Property reassignment: $(WarningsAsErrors)=";NU1605;SYSLIB0011" (previous value: ";NU1605") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.CSharp.targets (45,5)
+       D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.Pack.targets(34,5): message : Property reassignment: $(PackageDescription)="Package Description" (previous value: "") at D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.Pack.targets (34,5)
+       D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.Pack.targets(59,5): message : Property reassignment: $(GenerateNuspecDependsOn)="Build;_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; " (previous value: "_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; ") at D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.Pack.targets (59,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\Sdk\Sdk.targets(59,5): message : Property reassignment: $(_IsNotSetContainersTargetsDir)="true" (previous value: "false") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\Sdk\Sdk.targets (59,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Containers\build\Microsoft.NET.Build.Containers.targets(5,5): message : Property reassignment: $(_IsSDKContainerAllowedVersion)="true" (previous value: "false") at D:\DevTools\dotnet\sdk\10.0.103\Containers\build\Microsoft.NET.Build.Containers.targets (5,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Containers\build\Microsoft.NET.Build.Containers.targets(15,5): message : Property reassignment: $(_ContainerIsTargetingNet8TFM)="true" (previous value: "false") at D:\DevTools\dotnet\sdk\10.0.103\Containers\build\Microsoft.NET.Build.Containers.targets (15,5)
+       Overriding target "ResolveFrameworkReferences" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "ResolveFrameworkReferences" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets".
+       Overriding target "GenerateSupportedTargetFrameworkAlias" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "GenerateSupportedTargetFrameworkAlias" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets".
+       Overriding target "GetReferenceAssemblyPaths" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "GetReferenceAssemblyPaths" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "GetFrameworkPaths" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "GetFrameworkPaths" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "DesignerRuntimeImplementationProjectOutputGroup" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "DesignerRuntimeImplementationProjectOutputGroup" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets".
+       Overriding target "Publish" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "Publish" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets".
+       Overriding target "ResolveReadyToRunCompilers" in project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.CrossGen.targets" with target "ResolveReadyToRunCompilers" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets".
+       Overriding target "GetCopyToPublishDirectoryItems" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "GetCopyToPublishDirectoryItems" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets".
+       Overriding target "Run" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "Run" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets".
+     1>Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" on node 1 (Restore target(s)).
+     1>Target "_LoadRestoreGraphEntryPoints" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_FilterRestoreGraphProjectInputItems" depends on it):
+     1>Done building target "_LoadRestoreGraphEntryPoints" in project "BuildSystem.Tests.csproj".
+     1>Target "_FilterRestoreGraphProjectInputItems" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateRestoreGraph" depends on it):
+       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+     0>D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\Sdk\Sdk.props(49,11): message : Property 'MSBuildExtensionsPath' with value 'D:\DevTools\dotnet\sdk\10.0.103\' expanded from the environment.
+       D:\DevTools\dotnet\sdk\10.0.103\Current\Microsoft.Common.props(60,5): message : Property reassignment: $(MSBuildProjectExtensionsPath)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\" (previous value: "obj\") at D:\DevTools\dotnet\sdk\10.0.103\Current\Microsoft.Common.props (60,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Current\Microsoft.Common.props(84,119): message : Property 'MSBuildUserExtensionsPath' with value 'C:\Users\userJay30\AppData\Local\Microsoft\MSBuild' expanded from the environment.
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props(90,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles}") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props (90,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props(91,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem}") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props (91,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props(92,5): message : Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory};{RawFileName}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.props (92,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportPublishProfile.targets(28,5): message : Property reassignment: $(PublishProfileImported)="false" (previous value: "true") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportPublishProfile.targets (28,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets(81,5): message : Property reassignment: $(TargetPlatformVersion)="" (previous value: "0.0") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets (81,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets(127,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**" (previous value: ";bin\Debug\/**") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets (127,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets(142,5): message : Property reassignment: $(OutputPath)="bin\Debug\net10.0\" (previous value: "bin\Debug\") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets (142,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets(147,5): message : Property reassignment: $(IntermediateOutputPath)="obj\Debug\net10.0\" (previous value: "obj\Debug\") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DefaultOutputPaths.targets (147,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets(371,5): message : Property reassignment: $(RoslynTargetsPath)="D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\..\..\Roslyn" (previous value: "D:\DevTools\dotnet\sdk\10.0.103\Roslyn") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.BeforeCommon.targets (371,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Roslyn\Microsoft.Managed.Core.targets(6,5): message : Property reassignment: $(_BuildTasksDirectory)="D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\..\..\Roslyn\" (previous value: "D:\DevTools\dotnet\sdk\10.0.103\Roslyn\") at D:\DevTools\dotnet\sdk\10.0.103\Roslyn\Microsoft.Managed.Core.targets (6,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Roslyn\Microsoft.CSharp.Core.targets(200,5): message : Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion:14.0 -define:TRACE" (previous value: "-langversion:14.0") at D:\DevTools\dotnet\sdk\10.0.103\Roslyn\Microsoft.CSharp.Core.targets (200,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(175,5): message : Property reassignment: $(_DebugSymbolsProduced)="true" (previous value: "false") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (175,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(185,5): message : Property reassignment: $(_DocumentationFileProduced)="false" (previous value: "true") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (185,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(392,5): message : Property reassignment: $(MSBuildCopyMarkerName)="BuildSys.377F9C41" (previous value: "BuildSystem.Tests.csproj") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (392,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(393,5): message : Property reassignment: $(MSBuildCopyMarkerName)="BuildSys.377F9C41.Up2Date" (previous value: "BuildSys.377F9C41") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (393,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(541,5): message : Property reassignment: $(ProcessorArchitecture)="msil" (previous value: "") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (541,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(580,5): message : Property reassignment: $(DelaySign)="" (previous value: "false") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (580,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(2606,5): message : Property 'LOCALAPPDATA' with value 'C:\Users\userJay30\AppData\Local' expanded from the environment.
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(3934,5): message : Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (3934,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(3935,5): message : Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Off" (previous value: "Auto") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (3935,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message : Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message :       AssignProjectConfiguration;
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message :       _SplitProjectReferencesByFileExistence
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(5146,5): message :     " (previous value: "_SplitProjectReferencesByFileExistence") at D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets (5146,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets(6959,5): message : Property 'MSBuildExtensionsPath32' with value 'D:\DevTools\dotnet\sdk\10.0.103' expanded from the environment.
+       The "NuGetInteractive" property is a global property, and cannot be modified.
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(24,5): message : Property reassignment: $(ProjectAssetsFile)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\project.assets.json" (previous value: "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\/project.assets.json") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (24,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(29,5): message : Property reassignment: $(ProjectAssetsCacheFile)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\Debug\net10.0\BuildSystem.Tests.assets.cache" (previous value: "obj\Debug\net10.0\BuildSystem.Tests.assets.cache") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (29,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message : Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ResolveProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       FindInvalidProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       GetFrameworkPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       GetReferenceAssemblyPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ResolveSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ExpandSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ResolvePackageDependenciesForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       _HandlePackageFileConflicts;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ResolveProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       FindInvalidProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       GetFrameworkPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       GetReferenceAssemblyPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ResolveSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :       ExpandSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(80,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (80,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message : Property reassignment: $(PrepareResourcesDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       ResolvePackageDependenciesForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       _HandlePackageFileConflicts;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       PrepareResourceNames;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       ResGen;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       CompileLicxFiles
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :     
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       PrepareResourceNames;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       ResGen;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :       CompileLicxFiles
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets(86,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.PackageDependencyResolution.targets (86,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(35,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**" (previous value: ";bin\Debug\/**;obj\Debug\/**") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (35,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(37,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (37,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(40,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (40,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(41,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (41,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(42,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (42,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(43,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.slnx" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (43,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(44,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.slnx;**/*.vssscc" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.slnx") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (44,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(45,5): message : Property reassignment: $(DefaultItemExcludes)=";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.slnx;**/*.vssscc;**/.DS_Store" (previous value: ";bin\Debug\/**;obj\Debug\/**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.slnx;**/*.vssscc") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets (45,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message : Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolveProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       FindInvalidProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       GetFrameworkPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       GetReferenceAssemblyPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolveSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ExpandSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolvePackageDependenciesForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       _HandlePackageFileConflicts;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolveTargetingPackAssets;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolveProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       FindInvalidProjectReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       GetFrameworkPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       GetReferenceAssemblyPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolveSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ExpandSDKReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       ResolvePackageDependenciesForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :       _HandlePackageFileConflicts;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(14,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets (14,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(44,5): message : Property reassignment: $(_GenerateRuntimeConfigurationPropertyInputsCache)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\Debug\net10.0\BuildSystem.Tests.genruntimeconfig.cache" (previous value: "obj\Debug\net10.0\BuildSystem.Tests.genruntimeconfig.cache") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (44,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(46,5): message : Property reassignment: $(_GeneratePublishDependencyFilePropertyInputsCache)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\Debug\net10.0\BuildSystem.Tests.genpublishdeps.cache" (previous value: "obj\Debug\net10.0\BuildSystem.Tests.genpublishdeps.cache") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (46,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(48,5): message : Property reassignment: $(_GenerateSingleFileBundlePropertyInputsCache)="D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\Debug\net10.0\BuildSystem.Tests.genbundle.cache" (previous value: "obj\Debug\net10.0\BuildSystem.Tests.genbundle.cache") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (48,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(81,5): message : Property reassignment: $(GenerateRuntimeConfigDevFile)="false" (previous value: "true") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (81,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(98,5): message : Property 'USERPROFILE' with value 'C:\Users\userJay30' expanded from the environment.
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(98,5): message : Property reassignment: $(_DefaultUserProfileRuntimeStorePath)="C:\Users\userJay30" (previous value: "") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (98,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(99,5): message : Property reassignment: $(_DefaultUserProfileRuntimeStorePath)="C:\Users\userJay30\.dotnet\store" (previous value: "C:\Users\userJay30") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (99,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(144,5): message : Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32" (previous value: "Any CPU,x86,x64") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (144,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(148,5): message : Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32,ARM64" (previous value: "Any CPU,x86,x64,ARM32") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (148,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message : Property reassignment: $(CoreBuildDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       _CheckForBuildWithNoBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       BuildOnlySettings;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PreBuildEvent;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ResolveReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareResources;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ResolveKeySource;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       Compile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ExportWindowsMDFile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       UnmanagedUnregistration;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateSerializationAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       CreateSatelliteAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateManifests;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GetTargetPath;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareForRun;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       UnmanagedRegistration;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       IncrementalClean;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PostBuildEvent
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateBuildDependencyFile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateBuildRuntimeConfigurationFiles
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       BuildOnlySettings;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PreBuildEvent;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ResolveReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareResources;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ResolveKeySource;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       Compile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       ExportWindowsMDFile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       UnmanagedUnregistration;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateSerializationAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       CreateSatelliteAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GenerateManifests;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       GetTargetPath;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PrepareForRun;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       UnmanagedRegistration;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       IncrementalClean;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :       PostBuildEvent
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(204,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (204,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(213,5): message : Property reassignment: $(CoreCleanDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(213,5): message :       _SdkBeforeClean;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(213,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(213,5): message :     " (previous value: "") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (213,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message : Property reassignment: $(RebuildDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       _SdkBeforeRebuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       BeforeRebuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       Clean;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       Build;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       AfterRebuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :     
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       BeforeRebuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       Clean;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       Build;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :       AfterRebuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(220,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (220,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message : Property reassignment: $(CompileDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       ResolveReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       ResolveKeySource;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       SetWin32ManifestProperties;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _SetPreferNativeArm64Win32ManifestProperties;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       FindReferenceAssembliesForReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _GenerateCompileInputs;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       BeforeCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _TimeStampBeforeCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _GenerateCompileDependencyCache;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       CoreCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _TimeStampAfterCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       AfterCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _CreateAppHost;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _CreateComHost;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _GetIjwHostPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       ResolveReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       ResolveKeySource;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       SetWin32ManifestProperties;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _SetPreferNativeArm64Win32ManifestProperties;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       FindReferenceAssembliesForReferences;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _GenerateCompileInputs;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       BeforeCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _TimeStampBeforeCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _GenerateCompileDependencyCache;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       CoreCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       _TimeStampAfterCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :       AfterCompile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(799,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (799,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message : Property reassignment: $(CreateSatelliteAssembliesDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       _GenerateSatelliteAssemblyInputs;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       ComputeIntermediateSatelliteAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       GenerateSatelliteAssemblies
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       CoreGenerateSatelliteAssemblies
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       _GenerateSatelliteAssemblyInputs;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       ComputeIntermediateSatelliteAssemblies;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :       GenerateSatelliteAssemblies
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets(1131,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets (1131,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.GitLab\build\Microsoft.SourceLink.GitLab.targets(12,5): message : Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.GitLab\build\Microsoft.SourceLink.GitLab.targets (12,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.GitLab\build\Microsoft.SourceLink.GitLab.targets(13,5): message : Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.GitLab\build\Microsoft.SourceLink.GitLab.targets (13,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.AzureRepos.Git\build\Microsoft.SourceLink.AzureRepos.Git.targets(12,5): message : Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.AzureRepos.Git\build\Microsoft.SourceLink.AzureRepos.Git.targets (12,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.AzureRepos.Git\build\Microsoft.SourceLink.AzureRepos.Git.targets(13,5): message : Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.AzureRepos.Git\build\Microsoft.SourceLink.AzureRepos.Git.targets (13,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.Bitbucket.Git\build\Microsoft.SourceLink.Bitbucket.Git.targets(12,5): message : Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl;_InitializeBitbucketGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.Bitbucket.Git\build\Microsoft.SourceLink.Bitbucket.Git.targets (12,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.Bitbucket.Git\build\Microsoft.SourceLink.Bitbucket.Git.targets(13,5): message : Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation;TranslateBitbucketGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.SourceLink.Bitbucket.Git\build\Microsoft.SourceLink.Bitbucket.Git.targets (13,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message : Property reassignment: $(DesignerRuntimeImplementationProjectOutputGroupDependsOn)="
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       BuildOnlySettings;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       AssignTargetPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ResolveReferences
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :     
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :     ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       _GenerateDesignerDepsFile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       _GenerateDesignerRuntimeConfigFile;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       GetCopyToOutputDirectoryItems;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       _GatherDesignerShadowCopyFiles;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :     " (previous value: "
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       BuildOnlySettings;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       PrepareForBuild;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       AssignTargetPaths;
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :       ResolveReferences
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :     
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets(21,5): message :     ") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets (21,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.CSharp.targets(31,5): message : Property reassignment: $(DefineConstants)="TRACE;DEBUG" (previous value: "TRACE") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.CSharp.targets (31,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.CSharp.targets(45,5): message : Property reassignment: $(WarningsAsErrors)=";NU1605;SYSLIB0011" (previous value: ";NU1605") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.CSharp.targets (45,5)
+       D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.Pack.targets(34,5): message : Property reassignment: $(PackageDescription)="Package Description" (previous value: "") at D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.Pack.targets (34,5)
+       D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.Pack.targets(59,5): message : Property reassignment: $(GenerateNuspecDependsOn)="Build;_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; " (previous value: "_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; ") at D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.Pack.targets (59,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\Sdk\Sdk.targets(59,5): message : Property reassignment: $(_IsNotSetContainersTargetsDir)="true" (previous value: "false") at D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\Sdk\Sdk.targets (59,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Containers\build\Microsoft.NET.Build.Containers.targets(5,5): message : Property reassignment: $(_IsSDKContainerAllowedVersion)="true" (previous value: "false") at D:\DevTools\dotnet\sdk\10.0.103\Containers\build\Microsoft.NET.Build.Containers.targets (5,5)
+       D:\DevTools\dotnet\sdk\10.0.103\Containers\build\Microsoft.NET.Build.Containers.targets(15,5): message : Property reassignment: $(_ContainerIsTargetingNet8TFM)="true" (previous value: "false") at D:\DevTools\dotnet\sdk\10.0.103\Containers\build\Microsoft.NET.Build.Containers.targets (15,5)
+       Overriding target "ResolveFrameworkReferences" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "ResolveFrameworkReferences" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets".
+       Overriding target "GenerateSupportedTargetFrameworkAlias" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "GenerateSupportedTargetFrameworkAlias" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets".
+       Overriding target "GetReferenceAssemblyPaths" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "GetReferenceAssemblyPaths" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "GetFrameworkPaths" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "GetFrameworkPaths" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "DesignerRuntimeImplementationProjectOutputGroup" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "DesignerRuntimeImplementationProjectOutputGroup" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.DesignerSupport.targets".
+       Overriding target "Publish" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "Publish" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets".
+       Overriding target "ResolveReadyToRunCompilers" in project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.CrossGen.targets" with target "ResolveReadyToRunCompilers" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets".
+       Overriding target "GetCopyToPublishDirectoryItems" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "GetCopyToPublishDirectoryItems" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets".
+       Overriding target "Run" in project "D:\DevTools\dotnet\sdk\10.0.103\Microsoft.Common.CurrentVersion.targets" with target "Run" from project "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.targets".
+     1>Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (1) is building "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (1:2) on node 1 (_IsProjectRestoreSupported target(s)).
+   1:2>Target "_IsProjectRestoreSupported" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (entry point):
+   1:2>Done building target "_IsProjectRestoreSupported" in project "BuildSystem.Tests.csproj".
+   1:2>Done Building Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (_IsProjectRestoreSupported target(s)).
+     1>Done executing task "MSBuild".
+       Assembly loaded during TaskRun: NuGet.Build.Tasks, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll, MVID: c55bf910-9abe-4187-805d-dad3881bc30c, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.Common, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Common.dll, MVID: 9a75e9a2-ebcf-4c20-863c-86b8d21a910c, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.Commands, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Commands.dll, MVID: 678affb3-c99b-4423-9cb9-5b8405af771f, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.ProjectModel, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.ProjectModel.dll, MVID: 186e02d1-69bd-4fe8-b063-002229001751, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+       Using "WarnForInvalidProjectsTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "WarnForInvalidProjectsTask"
+       Done executing task "WarnForInvalidProjectsTask".
+     1>Done building target "_FilterRestoreGraphProjectInputItems" in project "BuildSystem.Tests.csproj".
+       Target "_FilterRestoreGraphProjectInputItems" skipped. Previously built successfully.
+     1>Target "_GetAllRestoreProjectPathItems" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateRestoreGraph" depends on it):
+       Using "NuGetMessageTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "NuGetMessageTask"
+         Determining projects to restore...
+       Done executing task "NuGetMessageTask".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+     1>Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (1) is building "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (1:3) on node 1 (_GenerateRestoreProjectPathWalk target(s)).
+   1:3>Target "_GenerateRestoreProjectPathItemsPerFramework" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateRestoreProjectPathItemsCurrentProject" depends on it):
+   1:3>Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "ConvertToAbsolutePath"
+       Done executing task "ConvertToAbsolutePath".
+   1:3>Done building target "_GenerateRestoreProjectPathItemsPerFramework" in project "BuildSystem.Tests.csproj".
+   1:3>Target "_GenerateRestoreProjectPathItemsCurrentProject" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateRestoreProjectPathItems" depends on it):
+   1:3>Done building target "_GenerateRestoreProjectPathItemsCurrentProject" in project "BuildSystem.Tests.csproj".
+   1:3>Target "_GenerateRestoreProjectPathItems" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateRestoreProjectPathWalk" depends on it):
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+   1:3>Done building target "_GenerateRestoreProjectPathItems" in project "BuildSystem.Tests.csproj".
+   1:3>Target "_GenerateRestoreProjectPathWalk" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (entry point):
+       Task "MSBuild"
+       Done executing task "MSBuild".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+   1:3>Done building target "_GenerateRestoreProjectPathWalk" in project "BuildSystem.Tests.csproj".
+   1:3>Done Building Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (_GenerateRestoreProjectPathWalk target(s)).
+     1>Done executing task "MSBuild".
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+     1>Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (1) is building "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (1:4) on node 1 (_IsProjectRestoreSupported target(s)).
+   1:4>Target "_IsProjectRestoreSupported" skipped. Previously built successfully.
+   1:4>Done Building Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (_IsProjectRestoreSupported target(s)).
+     1>Done executing task "MSBuild".
+     1>Done building target "_GetAllRestoreProjectPathItems" in project "BuildSystem.Tests.csproj".
+     1>Target "_GenerateRestoreGraph" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "Restore" depends on it):
+       Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Message"
+         Generating dg file
+       Done executing task "Message".
+       Task "Message"
+         D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj
+       Done executing task "Message".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+     1>Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (1) is building "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (1:5) on node 1 (_GenerateRestoreGraphProjectEntry target(s)).
+   1:5>Target "_CheckForUnsupportedNETCoreVersion" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "CollectPackageReferences" depends on it):
+   1:5>Done building target "_CheckForUnsupportedNETCoreVersion" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_CheckForUnsupportedCppNETCoreVersion" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "CollectPackageReferences" depends on it):
+   1:5>Done building target "_CheckForUnsupportedCppNETCoreVersion" in project "BuildSystem.Tests.csproj".
+   1:5>Target "UpdateAspNetToFrameworkReference" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.Shared.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "ApplyImplicitVersions" depends on it):
+       Using "CheckIfPackageReferenceShouldBeFrameworkReference" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\tools\net10.0\Microsoft.NET.Build.Tasks.dll".
+       Task "CheckIfPackageReferenceShouldBeFrameworkReference"
+       Done executing task "CheckIfPackageReferenceShouldBeFrameworkReference".
+       Task "CheckIfPackageReferenceShouldBeFrameworkReference"
+       Done executing task "CheckIfPackageReferenceShouldBeFrameworkReference".
+   1:5>Done building target "UpdateAspNetToFrameworkReference" in project "BuildSystem.Tests.csproj".
+   1:5>Target "CheckForImplicitPackageReferenceOverrides" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.Shared.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "ApplyImplicitVersions" depends on it):
+       Using "CheckForImplicitPackageReferenceOverrides" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\tools\net10.0\Microsoft.NET.Build.Tasks.dll".
+       Task "CheckForImplicitPackageReferenceOverrides"
+       Done executing task "CheckForImplicitPackageReferenceOverrides".
+   1:5>Done building target "CheckForImplicitPackageReferenceOverrides" in project "BuildSystem.Tests.csproj".
+   1:5>Target "ApplyImplicitVersions" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.Shared.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "CollectPackageReferences" depends on it):
+       Using "ApplyImplicitVersions" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\tools\net10.0\Microsoft.NET.Build.Tasks.dll".
+       Task "ApplyImplicitVersions"
+       Done executing task "ApplyImplicitVersions".
+   1:5>Done building target "ApplyImplicitVersions" in project "BuildSystem.Tests.csproj".
+       Target "CheckForImplicitPackageReferenceOverrides" skipped. Previously built successfully.
+   1:5>Target "_CheckForLanguageAndFeatureCombinationSupport" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "ProcessFrameworkReferences" depends on it):
+   1:5>Done building target "_CheckForLanguageAndFeatureCombinationSupport" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_ComputeToolPackInputsToProcessFrameworkReferences" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Publish.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "ProcessFrameworkReferences" depends on it):
+   1:5>Done building target "_ComputeToolPackInputsToProcessFrameworkReferences" in project "BuildSystem.Tests.csproj".
+   1:5>Target "ProcessFrameworkReferences" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "CollectPackageReferences" depends on it):
+       Using "CheckForDuplicateFrameworkReferences" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\tools\net10.0\Microsoft.NET.Build.Tasks.dll".
+       Task "CheckForDuplicateFrameworkReferences"
+       Done executing task "CheckForDuplicateFrameworkReferences".
+       Using "ProcessFrameworkReferences" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\tools\net10.0\Microsoft.NET.Build.Tasks.dll".
+       Task "ProcessFrameworkReferences"
+         Found 1 known framework references for target framework .NETCoreApp
+         Found 5 known runtime packs for target framework .NETCoreApp
+         Selected Microsoft.NETCore.App with RIDs 'linux-arm;linux-arm64;linux-musl-arm64;linux-musl-x64;linux-x64;osx-x64;tizen.4.0.0-armel;tizen.5.0.0-armel;win-arm64;win-x64;win-x86;linux-musl-arm;osx-arm64;linux-s390x;linux-loongarch64;linux-bionic-arm;linux-bionic-arm64;linux-bionic-x64;linux-bionic-x86;linux-ppc64le;freebsd-x64;freebsd-arm64;linux-riscv64;linux-musl-riscv64;linux-musl-loongarch64;android-arm64;android-x64'
+         Selected targeting pack 'Microsoft.NETCore.App@10.0.3'
+         Added runtime framework 'Microsoft.NETCore.App@10.0.0'
+         Selected Microsoft.WindowsDesktop.App with RIDs 'win-x64;win-x86;win-arm64'
+         Selected targeting pack 'Microsoft.WindowsDesktop.App@10.0.3'
+         Added runtime framework 'Microsoft.WindowsDesktop.App@10.0.0'
+         Selected Microsoft.WindowsDesktop.App with RIDs 'win-x64;win-x86;win-arm64'
+         Selected targeting pack 'Microsoft.WindowsDesktop.App.WPF@10.0.3'
+         Added runtime framework 'Microsoft.WindowsDesktop.App@10.0.0'
+         Selected Microsoft.WindowsDesktop.App with RIDs 'win-x64;win-x86;win-arm64'
+         Selected targeting pack 'Microsoft.WindowsDesktop.App.WindowsForms@10.0.3'
+         Added runtime framework 'Microsoft.WindowsDesktop.App@10.0.0'
+         Selected Microsoft.AspNetCore.App with RIDs 'win-x64;win-x86;osx-x64;linux-musl-x64;linux-musl-arm64;linux-x64;linux-arm;linux-arm64;linux-musl-arm;win-arm64;osx-arm64;linux-s390x;linux-loongarch64;linux-ppc64le;freebsd-x64;freebsd-arm64;linux-riscv64;linux-musl-riscv64;linux-loongarch64;linux-musl-loongarch64'
+         Selected targeting pack 'Microsoft.AspNetCore.App@10.0.3'
+         Added runtime framework 'Microsoft.AspNetCore.App@10.0.0'
+       Done executing task "ProcessFrameworkReferences".
+       Using "ResolveAppHosts" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\tools\net10.0\Microsoft.NET.Build.Tasks.dll".
+       Task "ResolveAppHosts"
+       Done executing task "ResolveAppHosts".
+   1:5>Done building target "ProcessFrameworkReferences" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_CheckForObsoleteDotNetCliToolReferences" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.ObsoleteReferences.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "CollectPackageReferences" depends on it):
+   1:5>Done building target "_CheckForObsoleteDotNetCliToolReferences" in project "BuildSystem.Tests.csproj".
+   1:5>Target "CollectPackageReferences" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GetRestoreProjectStyle" depends on it):
+       Using "CheckForDuplicateNuGetItemsTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   1:5>Done building target "CollectPackageReferences" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_GetRestoreProjectStyle" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateRestoreSpecs" depends on it):
+       Using "GetRestoreProjectStyleTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "GetRestoreProjectStyleTask"
+       Done executing task "GetRestoreProjectStyleTask".
+   1:5>Done building target "_GetRestoreProjectStyle" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_GenerateRestoreSpecs" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateRestoreGraphProjectEntry" depends on it):
+       Task "Message"
+         Restore entry point D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj
+       Done executing task "Message".
+   1:5>Done building target "_GenerateRestoreSpecs" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_GetRestoreSettingsOverrides" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GetRestoreSettings" depends on it):
+   1:5>Done building target "_GetRestoreSettingsOverrides" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_GetRestoreSettingsPerFramework" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GetRestoreSettingsCurrentProject" depends on it):
+   1:5>Done building target "_GetRestoreSettingsPerFramework" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_GetRestoreSettingsCurrentProject" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GetRestoreSettings" depends on it):
+   1:5>Done building target "_GetRestoreSettingsCurrentProject" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_GetRestoreSettings" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateDotnetCliToolReferenceSpecs" depends on it):
+       Using "GetRestoreSettingsTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "GetRestoreSettingsTask"
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.GetRestoreSettingsTask): NuGet.Configuration, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Configuration.dll, MVID: 522ba7e1-ae9d-4267-926f-e81ab189d75f, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+       Done executing task "GetRestoreSettingsTask".
+   1:5>Done building target "_GetRestoreSettings" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_GenerateDotnetCliToolReferenceSpecs" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateRestoreGraphProjectEntry" depends on it):
+       Using "GetRestoreDotnetCliToolsTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "GetRestoreDotnetCliToolsTask"
+       Done executing task "GetRestoreDotnetCliToolsTask".
+   1:5>Done building target "_GenerateDotnetCliToolReferenceSpecs" in project "BuildSystem.Tests.csproj".
+   1:5>Target "_GenerateRestoreGraphProjectEntry" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (entry point):
+   1:5>Done building target "_GenerateRestoreGraphProjectEntry" in project "BuildSystem.Tests.csproj".
+   1:5>Done Building Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (_GenerateRestoreGraphProjectEntry target(s)).
+     1>Done executing task "MSBuild".
+       Task "MSBuild"
+         Global Properties:
+           ExcludeRestorePackageImports=true
+     1>Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (1) is building "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (1:6) on node 1 (_GenerateProjectRestoreGraph target(s)).
+   1:6>Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+       Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+       Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+   1:6>Target "_GetRestoreTargetFrameworkOverride" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GetRestoreTargetFrameworksOutput" depends on it):
+   1:6>Done building target "_GetRestoreTargetFrameworkOverride" in project "BuildSystem.Tests.csproj".
+   1:6>Target "_GetRestoreTargetFrameworksOutput" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateRestoreProjectSpec" depends on it):
+       Using "GetProjectTargetFrameworksTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "GetProjectTargetFrameworksTask"
+       Done executing task "GetProjectTargetFrameworksTask".
+   1:6>Done building target "_GetRestoreTargetFrameworksOutput" in project "BuildSystem.Tests.csproj".
+       Target "_GetRestoreSettings" skipped. Previously built successfully.
+   1:6>Target "_GenerateRestoreProjectSpec" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateProjectRestoreGraph" depends on it):
+       Task "ConvertToAbsolutePath"
+       Done executing task "ConvertToAbsolutePath".
+   1:6>Done building target "_GenerateRestoreProjectSpec" in project "BuildSystem.Tests.csproj".
+       Target "_GetRestoreProjectStyle" skipped. Previously built successfully.
+       Target "CollectPackageReferences" skipped. Previously built successfully.
+   1:6>Target "CollectPackageDownloads" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   1:6>Done building target "CollectPackageDownloads" in project "BuildSystem.Tests.csproj".
+   1:6>Target "CollectFrameworkReferences" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_CollectRestoreInputs" depends on it):
+   1:6>Done building target "CollectFrameworkReferences" in project "BuildSystem.Tests.csproj".
+   1:6>Target "CollectCentralPackageVersions" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   1:6>Done building target "CollectCentralPackageVersions" in project "BuildSystem.Tests.csproj".
+   1:6>Target "CollectNuGetAuditSuppressions" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   1:6>Done building target "CollectNuGetAuditSuppressions" in project "BuildSystem.Tests.csproj".
+       Target "ProcessFrameworkReferences" skipped. Previously built successfully.
+   1:6>Target "AddPrunePackageReferences" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.FrameworkReferenceResolution.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "CollectPrunePackageReferences" depends on it):
+       Using "GetPackagesToPrune" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\tools\net10.0\Microsoft.NET.Build.Tasks.dll".
+       Task "GetPackagesToPrune"
+         Loading packages to prune for .NETCoreApp 10.0 Microsoft.NETCore.App
+         Loading prune package data from PrunePackageData folder
+         Failed to load prune package data from PrunePackageData folder, loading from targeting packs instead
+         Looking for targeting packs in D:\DevTools\dotnet\packs\Microsoft.NETCore.App.Ref
+         Pack directories found: D:\DevTools\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.3
+         Found package overrides file D:\DevTools\dotnet\packs\Microsoft.NETCore.App.Ref\10.0.3\data\PackageOverrides.txt
+       Done executing task "GetPackagesToPrune".
+   1:6>Done building target "AddPrunePackageReferences" in project "BuildSystem.Tests.csproj".
+   1:6>Target "CollectPrunePackageReferences" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_CollectRestoreInputs" depends on it):
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+   1:6>Done building target "CollectPrunePackageReferences" in project "BuildSystem.Tests.csproj".
+   1:6>Target "_CollectRestoreInputs" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateProjectRestoreGraphPerFramework" depends on it):
+   1:6>Done building target "_CollectRestoreInputs" in project "BuildSystem.Tests.csproj".
+   1:6>Target "_GenerateProjectRestoreGraphPerFramework" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateProjectRestoreGraphCurrentProject" depends on it):
+       Using "GetRestoreProjectReferencesTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "GetRestoreProjectReferencesTask"
+       Done executing task "GetRestoreProjectReferencesTask".
+       Using "GetRestorePackageReferencesTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "GetRestorePackageReferencesTask"
+       Done executing task "GetRestorePackageReferencesTask".
+       Using "GetRestorePackageDownloadsTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "GetRestorePackageDownloadsTask"
+       Done executing task "GetRestorePackageDownloadsTask".
+       Using "GetRestoreFrameworkReferencesTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "GetRestoreFrameworkReferencesTask"
+       Done executing task "GetRestoreFrameworkReferencesTask".
+       Using "GetRestoreNuGetAuditSuppressionsTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "GetRestoreNuGetAuditSuppressionsTask"
+       Done executing task "GetRestoreNuGetAuditSuppressionsTask".
+       Using "GetRestorePrunePackageReferencesTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "GetRestorePrunePackageReferencesTask"
+       Done executing task "GetRestorePrunePackageReferencesTask".
+   1:6>Done building target "_GenerateProjectRestoreGraphPerFramework" in project "BuildSystem.Tests.csproj".
+   1:6>Target "_GenerateProjectRestoreGraphCurrentProject" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateRestoreDependencies" depends on it):
+   1:6>Done building target "_GenerateProjectRestoreGraphCurrentProject" in project "BuildSystem.Tests.csproj".
+   1:6>Target "_GenerateRestoreDependencies" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "_GenerateProjectRestoreGraph" depends on it):
+   1:6>Done building target "_GenerateRestoreDependencies" in project "BuildSystem.Tests.csproj".
+   1:6>Target "_GenerateProjectRestoreGraph" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (entry point):
+   1:6>Done building target "_GenerateProjectRestoreGraph" in project "BuildSystem.Tests.csproj".
+   1:6>Done Building Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (_GenerateProjectRestoreGraph target(s)).
+     1>Done executing task "MSBuild".
+     1>Done building target "_GenerateRestoreGraph" in project "BuildSystem.Tests.csproj".
+     1>Target "_CollectTargetFrameworkForTelemetry" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "Restore" depends on it):
+       Using "AllowEmptyTelemetry" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\..\tools\net10.0\Microsoft.NET.Build.Tasks.dll".
+       Task "AllowEmptyTelemetry"
+       Done executing task "AllowEmptyTelemetry".
+     1>Done building target "_CollectTargetFrameworkForTelemetry" in project "BuildSystem.Tests.csproj".
+     1>Target "_CheckForUnsupportedNETCoreVersion" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "Restore" depends on it):
+     1>Done building target "_CheckForUnsupportedNETCoreVersion" in project "BuildSystem.Tests.csproj".
+     1>Target "_CheckForUnsupportedCppNETCoreVersion" in file "D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.TargetFrameworkInference.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (target "Restore" depends on it):
+     1>Done building target "_CheckForUnsupportedCppNETCoreVersion" in project "BuildSystem.Tests.csproj".
+     1>Target "Restore" in file "D:\DevTools\dotnet\sdk\10.0.103\NuGet.targets" from project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (entry point):
+       Task "RemoveDuplicates"
+       Done executing task "RemoveDuplicates".
+       Using "RestoreTask" task from assembly "D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll".
+       Task "RestoreTask"
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Packaging, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Packaging.dll, MVID: 691fbee5-b36c-46fd-a673-db79d3c14051, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.LibraryModel, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.LibraryModel.dll, MVID: a6bbad50-9e54-4ecf-9ee6-06659d261f87, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Versioning, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Versioning.dll, MVID: 3f1bd844-829c-40f0-b7b2-db643543649c, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Frameworks, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Frameworks.dll, MVID: 1b7b49ca-9945-4cfa-824f-5d73c248e8d6, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Protocol, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Protocol.dll, MVID: f9fea46b-5e46-4ce0-a20f-e4253f7ea121, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.Credentials, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.Credentials.dll, MVID: 3086496a-ea04-4486-96b4-8a3e90687378, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Collections.NonGeneric, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Collections.NonGeneric.dll, MVID: 34793951-de27-497a-86fa-ff7f73c34148, AssemblyLoadContext: Default)
+         X.509 certificate chain validation will use the default trust store selected by .NET for code signing.
+         X.509 certificate chain validation will use the default trust store selected by .NET for timestamping.
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): NuGet.DependencyResolver.Core, Version=7.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: D:\DevTools\dotnet\sdk\10.0.103\NuGet.DependencyResolver.Core.dll, MVID: 8b34e545-21b0-4590-be6b-6b43bfa1968c, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+         Running restore with 12 concurrent jobs.
+         Reading project file D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj.
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed (location: D:\DevTools\dotnet\sdk\10.0.103\Newtonsoft.Json.dll, MVID: 7e62198b-eab2-4380-bbac-29171862d1d8, AssemblyLoadContext: MSBuild plugin D:\DevTools\dotnet\sdk\10.0.103\NuGet.Build.Tasks.dll)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Runtime.Serialization.Primitives, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Runtime.Serialization.Primitives.dll, MVID: 9bc74e02-881b-4bc0-82b9-d2a9156b6d41, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Runtime.Numerics, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Runtime.Numerics.dll, MVID: a1d287c5-84bc-4499-8e90-494a1a3f9350, AssemblyLoadContext: Default)
+         The restore inputs for 'BuildSystem.Tests' have changed. Continuing restore.
+         Restoring packages for D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj...
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Net.Sockets, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Net.Sockets.dll, MVID: d4dae19c-a532-4ae0-916b-3763913739a0, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Threading.Overlapped, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Threading.Overlapped.dll, MVID: 092ab194-5254-4084-95a8-da161dcea080, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Runtime.Intrinsics, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Runtime.Intrinsics.dll, MVID: 9f5af1ce-aa80-4680-b03a-60771503d33f, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Security.Principal.Windows, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Security.Principal.Windows.dll, MVID: 94668085-5eab-454a-aadd-f7411e0617e0, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Security.Claims, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Security.Claims.dll, MVID: 20e6e427-b6b6-4325-b1e2-55052517fb2d, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Linq.Expressions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Linq.Expressions.dll, MVID: cc5697e3-9d40-4c28-b3b9-4b271a4593e1, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.ComponentModel.TypeConverter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.ComponentModel.TypeConverter.dll, MVID: 4dbdb69f-1290-4069-bf6a-9a6f24e8f6fc, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.ObjectModel.dll, MVID: 2c1629e1-2ad7-4f58-9c22-4928776a6cb9, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Runtime.Serialization.Formatters, Version=8.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Runtime.Serialization.Formatters.dll, MVID: 2a5142af-889e-4701-a330-f9028d2593da, AssemblyLoadContext: Default)
+           GET https://nuget.pkg.github.com/codeloverjay30/download/microsoft.build.utilities.core/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/microsoft.build/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/xunit.runner.visualstudio/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/system.io.abstractions.testinghelpers/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/xunit/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/fluentvalidation/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/system.io.abstractions/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/fluentassertions/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/microsoft.net.test.sdk/index.json
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/microsoft.build.utilities.core/index.json 415ms
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Diagnostics.TraceSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Diagnostics.TraceSource.dll, MVID: 553fe9f8-6a87-45ba-a259-74dc5900545d, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Data.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Data.Common.dll, MVID: c66fc60f-d43d-4d63-9e6d-aa5baf23c716, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.ComponentModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.ComponentModel.dll, MVID: dfbe3f8a-21fc-47c1-8505-2409f96f9862, AssemblyLoadContext: Default)
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null (location: , MVID: 8758f132-718a-450d-a6d1-c099b203a5cb, AssemblyLoadContext: Default)
+           GET https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.build.utilities.core/index.json
+           GET https://api.nuget.org/v3-flatcontainer/fluentvalidation/index.json
+           GET https://api.nuget.org/v3-flatcontainer/xunit/index.json
+           OK https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json 17ms
+           GET https://api.nuget.org/v3-flatcontainer/fluentassertions/index.json
+           GET https://api.nuget.org/v3-flatcontainer/system.io.abstractions.testinghelpers/index.json
+           GET https://api.nuget.org/v3-flatcontainer/system.io.abstractions/index.json
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.build/index.json
+           GET https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/xunit/index.json 59ms
+           OK https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.8.2/xunit.runner.visualstudio.2.8.2.nupkg 22ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json 43ms
+           GET https://api.nuget.org/v3-flatcontainer/xunit/2.9.2/xunit.2.9.2.nupkg
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/microsoft.build/index.json 694ms
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/17.12.0/microsoft.net.test.sdk.17.12.0.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/xunit/2.9.2/xunit.2.9.2.nupkg 21ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/17.12.0/microsoft.net.test.sdk.17.12.0.nupkg 22ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/xunit.runner.visualstudio/index.json 521ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.build.utilities.core/index.json 233ms
+           OK https://api.nuget.org/v3-flatcontainer/fluentassertions/index.json 226ms
+           OK https://api.nuget.org/v3-flatcontainer/fluentvalidation/index.json 242ms
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.build.utilities.core/17.12.6/microsoft.build.utilities.core.17.12.6.nupkg
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/system.io.abstractions/index.json 573ms
+           GET https://api.nuget.org/v3-flatcontainer/fluentvalidation/12.1.1/fluentvalidation.12.1.1.nupkg
+           GET https://api.nuget.org/v3-flatcontainer/fluentassertions/8.9.0/fluentassertions.8.9.0.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/system.io.abstractions.testinghelpers/index.json 245ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.build.utilities.core/17.12.6/microsoft.build.utilities.core.17.12.6.nupkg 14ms
+           OK https://api.nuget.org/v3-flatcontainer/system.io.abstractions/index.json 241ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/fluentvalidation/index.json 590ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.build/index.json 236ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/xunit/index.json 605ms
+           OK https://api.nuget.org/v3-flatcontainer/fluentvalidation/12.1.1/fluentvalidation.12.1.1.nupkg 21ms
+           OK https://api.nuget.org/v3-flatcontainer/fluentassertions/8.9.0/fluentassertions.8.9.0.nupkg 24ms
+           GET https://api.nuget.org/v3-flatcontainer/system.io.abstractions.testinghelpers/22.1.1/system.io.abstractions.testinghelpers.22.1.1.nupkg
+           GET https://api.nuget.org/v3-flatcontainer/system.io.abstractions/22.1.1/system.io.abstractions.22.1.1.nupkg
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.build/17.12.6/microsoft.build.17.12.6.nupkg
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/fluentassertions/index.json 635ms
+           OK https://api.nuget.org/v3-flatcontainer/system.io.abstractions.testinghelpers/22.1.1/system.io.abstractions.testinghelpers.22.1.1.nupkg 58ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/system.io.abstractions.testinghelpers/index.json 689ms
+           OK https://api.nuget.org/v3-flatcontainer/system.io.abstractions/22.1.1/system.io.abstractions.22.1.1.nupkg 86ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.build/17.12.6/microsoft.build.17.12.6.nupkg 85ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/microsoft.net.test.sdk/index.json 896ms
+         Pruning the package 'System.Collections.Immutable 8.0.0' as a dependency of 'package/Microsoft.Build 17.12.6'. The maximum prunable version is '10.0.32767'
+         Pruning the package 'System.Reflection.Metadata 8.0.0' as a dependency of 'package/Microsoft.Build 17.12.6'. The maximum prunable version is '10.0.32767'
+         Pruning the package 'System.Collections.Immutable 8.0.0' as a dependency of 'package/Microsoft.Build.Utilities.Core 17.12.6'. The maximum prunable version is '10.0.32767'
+           GET https://nuget.pkg.github.com/codeloverjay30/download/microsoft.build.framework/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/microsoft.net.stringtools/index.json
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/system.configuration.configurationmanager/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/system.reflection.metadataloadcontext/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/xunit.core/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/testableio.system.io.abstractions/index.json
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.net.stringtools/index.json
+           GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/xunit.analyzers/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/testableio.system.io.abstractions.wrappers/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/xunit.assert/index.json
+           GET https://api.nuget.org/v3-flatcontainer/xunit.core/index.json
+           GET https://api.nuget.org/v3-flatcontainer/system.reflection.metadataloadcontext/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/testableio.system.io.abstractions.testinghelpers/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/microsoft.codecoverage/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/microsoft.testplatform.testhost/index.json
+           GET https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions/index.json
+           GET https://api.nuget.org/v3-flatcontainer/xunit.analyzers/index.json
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.net.stringtools/index.json 11ms
+           GET https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions.wrappers/index.json
+           GET https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions.testinghelpers/index.json
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/index.json
+           GET https://api.nuget.org/v3-flatcontainer/xunit.assert/index.json
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/index.json
+           OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/index.json 19ms
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.net.stringtools/17.12.6/microsoft.net.stringtools.17.12.6.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/xunit.analyzers/index.json 27ms
+           OK https://api.nuget.org/v3-flatcontainer/xunit.core/index.json 34ms
+           GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/8.0.0/system.configuration.configurationmanager.8.0.0.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/xunit.assert/index.json 28ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.net.stringtools/17.12.6/microsoft.net.stringtools.17.12.6.nupkg 28ms
+           GET https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.16.0/xunit.analyzers.1.16.0.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/8.0.0/system.configuration.configurationmanager.8.0.0.nupkg 19ms
+           OK https://api.nuget.org/v3-flatcontainer/system.reflection.metadataloadcontext/index.json 54ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/index.json 52ms
+           GET https://api.nuget.org/v3-flatcontainer/xunit.core/2.9.2/xunit.core.2.9.2.nupkg
+           GET https://api.nuget.org/v3-flatcontainer/xunit.assert/2.9.2/xunit.assert.2.9.2.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.16.0/xunit.analyzers.1.16.0.nupkg 17ms
+           GET https://api.nuget.org/v3-flatcontainer/system.reflection.metadataloadcontext/8.0.0/system.reflection.metadataloadcontext.8.0.0.nupkg
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/17.12.0/microsoft.testplatform.testhost.17.12.0.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/system.reflection.metadataloadcontext/8.0.0/system.reflection.metadataloadcontext.8.0.0.nupkg 32ms
+           OK https://api.nuget.org/v3-flatcontainer/xunit.core/2.9.2/xunit.core.2.9.2.nupkg 53ms
+           OK https://api.nuget.org/v3-flatcontainer/xunit.assert/2.9.2/xunit.assert.2.9.2.nupkg 71ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/17.12.0/microsoft.testplatform.testhost.17.12.0.nupkg 53ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/index.json 220ms
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/17.12.6/microsoft.build.framework.17.12.6.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions/index.json 230ms
+           OK https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions.testinghelpers/index.json 226ms
+           OK https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions.wrappers/index.json 226ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.build.framework/17.12.6/microsoft.build.framework.17.12.6.nupkg 14ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/index.json 236ms
+           GET https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions.testinghelpers/22.1.1/testableio.system.io.abstractions.testinghelpers.22.1.1.nupkg
+           GET https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions/22.1.1/testableio.system.io.abstractions.22.1.1.nupkg
+           GET https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions.wrappers/22.1.1/testableio.system.io.abstractions.wrappers.22.1.1.nupkg
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/17.12.0/microsoft.codecoverage.17.12.0.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions/22.1.1/testableio.system.io.abstractions.22.1.1.nupkg 35ms
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/17.12.0/microsoft.codecoverage.17.12.0.nupkg 24ms
+           OK https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions.wrappers/22.1.1/testableio.system.io.abstractions.wrappers.22.1.1.nupkg 33ms
+           OK https://api.nuget.org/v3-flatcontainer/testableio.system.io.abstractions.testinghelpers/22.1.1/testableio.system.io.abstractions.testinghelpers.22.1.1.nupkg 62ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/xunit.core/index.json 450ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/system.configuration.configurationmanager/index.json 467ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/xunit.analyzers/index.json 452ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/xunit.assert/index.json 457ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/testableio.system.io.abstractions/index.json 480ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/microsoft.build.framework/index.json 502ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/microsoft.net.stringtools/index.json 528ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/testableio.system.io.abstractions.wrappers/index.json 622ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/system.reflection.metadataloadcontext/index.json 637ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/microsoft.testplatform.testhost/index.json 656ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/microsoft.codecoverage/index.json 656ms
+         Pruning the package 'System.Collections.Immutable 8.0.0' as a dependency of 'package/System.Reflection.MetadataLoadContext 8.0.0'. The maximum prunable version is '10.0.32767'
+         Pruning the package 'System.Reflection.Metadata 8.0.0' as a dependency of 'package/System.Reflection.MetadataLoadContext 8.0.0'. The maximum prunable version is '10.0.32767'
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/testableio.system.io.abstractions.testinghelpers/index.json 896ms
+           GET https://nuget.pkg.github.com/codeloverjay30/download/system.diagnostics.eventlog/index.json
+           GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/system.security.cryptography.protecteddata/index.json
+           GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/index.json
+           OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/index.json 22ms
+           GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/8.0.0/system.security.cryptography.protecteddata.8.0.0.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/8.0.0/system.security.cryptography.protecteddata.8.0.0.nupkg 18ms
+           OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/index.json 75ms
+           GET https://nuget.pkg.github.com/codeloverjay30/download/microsoft.testplatform.objectmodel/index.json
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/index.json
+           GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/8.0.0/system.diagnostics.eventlog.8.0.0.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/index.json 13ms
+           OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.eventlog/8.0.0/system.diagnostics.eventlog.8.0.0.nupkg 19ms
+           GET https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/17.12.0/microsoft.testplatform.objectmodel.17.12.0.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/17.12.0/microsoft.testplatform.objectmodel.17.12.0.nupkg 47ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/system.diagnostics.eventlog/index.json 433ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/microsoft.testplatform.objectmodel/index.json 430ms
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Net.Quic, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Net.Quic.dll, MVID: 60b05b51-8208-40f5-ae2a-7b1ce0ccedba, AssemblyLoadContext: Default)
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/system.security.cryptography.protecteddata/index.json 634ms
+         Pruning the package 'System.Reflection.Metadata 1.6.0' as a dependency of 'package/Microsoft.TestPlatform.ObjectModel 17.12.0'. The maximum prunable version is '10.0.32767'
+           GET https://nuget.pkg.github.com/codeloverjay30/download/xunit.extensibility.execution/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/xunit.extensibility.core/index.json
+           GET https://nuget.pkg.github.com/codeloverjay30/download/testably.abstractions.filesystem.interface/index.json
+           GET https://api.nuget.org/v3-flatcontainer/testably.abstractions.filesystem.interface/index.json
+           GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/index.json
+           GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/index.json
+           OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/index.json 20ms
+           GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.9.2/xunit.extensibility.core.2.9.2.nupkg 22ms
+           OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/index.json 206ms
+           OK https://api.nuget.org/v3-flatcontainer/testably.abstractions.filesystem.interface/index.json 213ms
+           GET https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg
+           GET https://nuget.pkg.github.com/codeloverjay30/download/xunit.abstractions/index.json
+           GET https://api.nuget.org/v3-flatcontainer/xunit.abstractions/index.json
+           GET https://api.nuget.org/v3-flatcontainer/testably.abstractions.filesystem.interface/10.1.0/testably.abstractions.filesystem.interface.10.1.0.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.9.2/xunit.extensibility.execution.2.9.2.nupkg 10ms
+           OK https://api.nuget.org/v3-flatcontainer/xunit.abstractions/index.json 14ms
+           OK https://api.nuget.org/v3-flatcontainer/testably.abstractions.filesystem.interface/10.1.0/testably.abstractions.filesystem.interface.10.1.0.nupkg 15ms
+           GET https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg
+           OK https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg 13ms
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/testably.abstractions.filesystem.interface/index.json 411ms
+         Acquiring lock for the installation of FluentAssertions 8.9.0
+         Acquired lock for the installation of FluentAssertions 8.9.0
+         Acquiring lock for the installation of System.Configuration.ConfigurationManager 8.0.0
+         Acquired lock for the installation of System.Configuration.ConfigurationManager 8.0.0
+         Acquiring lock for the installation of Microsoft.Build.Framework 17.12.6
+         Acquired lock for the installation of Microsoft.Build.Framework 17.12.6
+         Acquiring lock for the installation of Microsoft.TestPlatform.ObjectModel 17.12.0
+         Acquired lock for the installation of Microsoft.TestPlatform.ObjectModel 17.12.0
+         Acquiring lock for the installation of xunit.assert 2.9.2
+         Acquired lock for the installation of xunit.assert 2.9.2
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/xunit.extensibility.execution/index.json 495ms
+         Acquiring lock for the installation of System.Diagnostics.EventLog 8.0.0
+         Acquired lock for the installation of System.Diagnostics.EventLog 8.0.0
+         Acquiring lock for the installation of xunit.core 2.9.2
+         Acquired lock for the installation of xunit.core 2.9.2
+         Acquiring lock for the installation of Microsoft.CodeCoverage 17.12.0
+         Acquired lock for the installation of Microsoft.CodeCoverage 17.12.0
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/xunit.extensibility.core/index.json 532ms
+         Acquiring lock for the installation of xunit.runner.visualstudio 2.8.2
+         Acquired lock for the installation of xunit.runner.visualstudio 2.8.2
+         Acquiring lock for the installation of Microsoft.Build 17.12.6
+         Acquired lock for the installation of Microsoft.Build 17.12.6
+         Acquiring lock for the installation of xunit.abstractions 2.0.3
+         Acquired lock for the installation of xunit.abstractions 2.0.3
+         Acquiring lock for the installation of xunit.extensibility.execution 2.9.2
+         Acquired lock for the installation of xunit.extensibility.execution 2.9.2
+         Acquiring lock for the installation of xunit.analyzers 1.16.0
+         Acquired lock for the installation of xunit.analyzers 1.16.0
+         Acquiring lock for the installation of FluentValidation 12.1.1
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Security.Cryptography.Pkcs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: D:\DevTools\dotnet\sdk\10.0.103\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll, MVID: d1f11134-f762-4ce1-8488-27657b55118f, AssemblyLoadContext: Default)
+         Acquired lock for the installation of FluentValidation 12.1.1
+         Acquiring lock for the installation of Newtonsoft.Json 13.0.1
+         Acquired lock for the installation of Newtonsoft.Json 13.0.1
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.Formats.Asn1, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.Formats.Asn1.dll, MVID: bfe9a804-d74d-4017-9638-1bd7113ed45d, AssemblyLoadContext: Default)
+         Acquiring lock for the installation of Testably.Abstractions.FileSystem.Interface 10.1.0
+         Acquired lock for the installation of Testably.Abstractions.FileSystem.Interface 10.1.0
+         PackageSignatureVerificationLog: PackageIdentity: Microsoft.TestPlatform.ObjectModel.17.12.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: xunit.abstractions.2.0.3 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: System.Diagnostics.EventLog.8.0.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: FluentValidation.12.1.1 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: FluentAssertions.8.9.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: Microsoft.CodeCoverage.17.12.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: Microsoft.Build.Framework.17.12.6 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: Microsoft.Build.17.12.6 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: System.Configuration.ConfigurationManager.8.0.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: xunit.analyzers.1.16.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: xunit.core.2.9.2 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: xunit.runner.visualstudio.2.8.2 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: xunit.assert.2.9.2 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: xunit.extensibility.execution.2.9.2 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: Newtonsoft.Json.13.0.1 Source: C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\ PackageSignatureValidity: True
+         Assembly loaded during TaskRun (NuGet.Build.Tasks.RestoreTask): System.IO.Pipelines, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51 (location: D:\DevTools\dotnet\shared\Microsoft.NETCore.App\10.0.3\System.IO.Pipelines.dll, MVID: 47531204-037a-4e5d-8cf9-b7a73083f638, AssemblyLoadContext: Default)
+         Installed xunit.core 2.9.2 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\xunit.core\2.9.2 with content hash O6RrNSdmZ0xgEn5kT927PNwog5vxTtKrWMihhhrT0Sg9jQ7iBDciYOwzBgP2krBEk5/GBXI18R1lKvmnxGcb4w==.
+         Installed FluentValidation 12.1.1 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\fluentvalidation\12.1.1 with content hash EPpkIe1yh1a0OXyC100oOA8WMbZvqUu5plwhvYcb7oSELfyUZzfxV48BLhvs3kKo4NwG7MGLNgy1RJiYtT8Dpw==.
+         Acquiring lock for the installation of TestableIO.System.IO.Abstractions.TestingHelpers 22.1.1
+         Acquiring lock for the installation of Microsoft.TestPlatform.TestHost 17.12.0
+         Acquired lock for the installation of TestableIO.System.IO.Abstractions.TestingHelpers 22.1.1
+         Acquired lock for the installation of Microsoft.TestPlatform.TestHost 17.12.0
+         Installed xunit.abstractions 2.0.3 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\xunit.abstractions\2.0.3 with content hash pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==.
+         Acquiring lock for the installation of Microsoft.Build.Utilities.Core 17.12.6
+         Acquired lock for the installation of Microsoft.Build.Utilities.Core 17.12.6
+         Installed xunit.extensibility.execution 2.9.2 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\xunit.extensibility.execution\2.9.2 with content hash rKMpq4GsIUIJibXuZoZ8lYp5EpROlnYaRpwu9Zr0sRZXE7JqJfEEbCsUriZqB+ByXCLFBJyjkTRULMdC+U566g==.
+         Acquiring lock for the installation of xunit.extensibility.core 2.9.2
+         Installed xunit.analyzers 1.16.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\xunit.analyzers\1.16.0 with content hash hptYM7vGr46GUIgZt21YHO4rfuBAQS2eINbFo16CV/Dqq+24Tp+P5gDCACu1AbFfW4Sp/WRfDPSK8fmUUb8s0Q==.
+         Installed xunit.assert 2.9.2 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\xunit.assert\2.9.2 with content hash QkNBAQG4pa66cholm28AxijBjrmki98/vsEh4Sx5iplzotvPgpiotcxqJQMRC8d7RV7nIT8ozh97957hDnZwsQ==.
+         Acquiring lock for the installation of Microsoft.NET.Test.Sdk 17.12.0
+         Acquired lock for the installation of xunit.extensibility.core 2.9.2
+         Acquiring lock for the installation of xunit 2.9.2
+         Acquired lock for the installation of Microsoft.NET.Test.Sdk 17.12.0
+         Acquired lock for the installation of xunit 2.9.2
+         PackageSignatureVerificationLog: PackageIdentity: xunit.2.9.2 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: Microsoft.NET.Test.Sdk.17.12.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: xunit.extensibility.core.2.9.2 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         Installed xunit 2.9.2 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\xunit\2.9.2 with content hash 7LhFS2N9Z6Xgg8aE5lY95cneYivRMfRI8v+4PATa4S64D5Z/Plkg0qa8dTRHSiGRgVZ/CL2gEfJDE5AUhOX+2Q==.
+         Acquiring lock for the installation of System.IO.Abstractions.TestingHelpers 22.1.1
+         Acquired lock for the installation of System.IO.Abstractions.TestingHelpers 22.1.1
+         Installed xunit.runner.visualstudio 2.8.2 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\xunit.runner.visualstudio\2.8.2 with content hash vm1tbfXhFmjFMUmS4M0J0ASXz3/U5XvXBa6DOQUL3fEz4Vt6YPhv+ESCarx6M6D+9kJkJYZKCNvJMas1+nVfmQ==.
+         Acquiring lock for the installation of System.Security.Cryptography.ProtectedData 8.0.0
+         Acquired lock for the installation of System.Security.Cryptography.ProtectedData 8.0.0
+         PackageSignatureVerificationLog: PackageIdentity: System.IO.Abstractions.TestingHelpers.22.1.1 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: System.Security.Cryptography.ProtectedData.8.0.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         Installed Microsoft.Build.Framework 17.12.6 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\microsoft.build.framework\17.12.6 with content hash jleteC0seumLGTmTVwob97lcwPj/dfgzL/V3g/VVcMZgo2Ic7jzdy8AYpByPDh8e3uRq0SjCl6HOFCjhy5GzRQ==.
+         Acquiring lock for the installation of System.IO.Abstractions 22.1.1
+         Acquired lock for the installation of System.IO.Abstractions 22.1.1
+         Installed FluentAssertions 8.9.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\fluentassertions\8.9.0 with content hash Y5RDjxaVlxWX2yy0X/ay1tJjSKMOtjepSb83mmfngFS63hm3LsoZNj6nhmImzm1ifRmpF9ouvmHjx9nNwnkpDg==.
+         Acquiring lock for the installation of TestableIO.System.IO.Abstractions 22.1.1
+         Installed Microsoft.Build 17.12.6 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\microsoft.build\17.12.6 with content hash Gz8VteydDNLOhm0vov0dSeQb43ibQ4EnWoc2UtjUd7F3MNFo12o/3XLvVFoZ9b8UXBX6EzraL8XLCy93QTnnIA==.
+         Acquired lock for the installation of TestableIO.System.IO.Abstractions 22.1.1
+         Installed Microsoft.NET.Test.Sdk 17.12.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\microsoft.net.test.sdk\17.12.0 with content hash kt/PKBZ91rFCWxVIJZSgVLk+YR+4KxTuHf799ho8WNiK5ZQpJNAEZCAWX86vcKrs+DiYjiibpYKdGZP6+/N17w==.
+         Acquiring lock for the installation of System.Reflection.MetadataLoadContext 8.0.0
+         Acquiring lock for the installation of TestableIO.System.IO.Abstractions.Wrappers 22.1.1
+         Acquired lock for the installation of System.Reflection.MetadataLoadContext 8.0.0
+         Acquired lock for the installation of TestableIO.System.IO.Abstractions.Wrappers 22.1.1
+         Installed System.Configuration.ConfigurationManager 8.0.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\system.configuration.configurationmanager\8.0.0 with content hash JlYi9XVvIREURRUlGMr1F6vOFLk7YSY4p1vHo4kX3tQ0AGrjqlRWHDi66ImHhy6qwXBG3BJ6Y1QlYQ+Qz6Xgww==.
+         Acquiring lock for the installation of Microsoft.NET.StringTools 17.12.6
+         Acquired lock for the installation of Microsoft.NET.StringTools 17.12.6
+         PackageSignatureVerificationLog: PackageIdentity: System.IO.Abstractions.22.1.1 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         Installed xunit.extensibility.core 2.9.2 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\xunit.extensibility.core\2.9.2 with content hash Ol+KlBJz1x8BrdnhN2DeOuLrr1I/cTwtHCggL9BvYqFuVd/TUSzxNT5O0NxCIXth30bsKxgMfdqLTcORtM52yQ==.
+           NotFound https://nuget.pkg.github.com/codeloverjay30/download/xunit.abstractions/index.json 1852ms
+         PackageSignatureVerificationLog: PackageIdentity: TestableIO.System.IO.Abstractions.22.1.1 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: Microsoft.NET.StringTools.17.12.6 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: TestableIO.System.IO.Abstractions.Wrappers.22.1.1 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: System.Reflection.MetadataLoadContext.8.0.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         Installed Newtonsoft.Json 13.0.1 from C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\ to D:\DevTools\nuget_cache\newtonsoft.json\13.0.1 with content hash ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==.
+         PackageSignatureVerificationLog: PackageIdentity: Testably.Abstractions.FileSystem.Interface.10.1.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: TestableIO.System.IO.Abstractions.TestingHelpers.22.1.1 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         Installed System.Diagnostics.EventLog 8.0.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\system.diagnostics.eventlog\8.0.0 with content hash fdYxcRjQqTTacKId/2IECojlDSFvp7LP5N78+0z/xH7v/Tuw5ZAxu23Y6PTCRinqyu2ePx+Gn1098NC6jM6d+A==.
+         Installed System.IO.Abstractions.TestingHelpers 22.1.1 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\system.io.abstractions.testinghelpers\22.1.1 with content hash /fJ2F9N8Q7ZL7l7TQRcFtgaBdLBOj4+XL8ipc9sZC8tLMjoNBJtuyxMise5utraozm3KDAzPls5iWIcDCwpawQ==.
+         PackageSignatureVerificationLog: PackageIdentity: Microsoft.TestPlatform.TestHost.17.12.0 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         PackageSignatureVerificationLog: PackageIdentity: Microsoft.Build.Utilities.Core.17.12.6 Source: https://api.nuget.org/v3/index.json PackageSignatureValidity: True
+         Installed System.IO.Abstractions 22.1.1 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\system.io.abstractions\22.1.1 with content hash nm4sNhAoN1NyiIVT6MS3EEzNjnir3PC1HE0mKGGUFg6RBW1HmRvWKuRDPkij1etOoQkpyIFmjVGcM6TpBGF3qQ==.
+         Installed System.Security.Cryptography.ProtectedData 8.0.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\system.security.cryptography.protecteddata\8.0.0 with content hash +TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==.
+         Installed TestableIO.System.IO.Abstractions 22.1.1 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\testableio.system.io.abstractions\22.1.1 with content hash EJmXIKfwvJHvSHWP+NjA213avUdofV4SmBx2aWxc3SzPkrHHVKxUMC3fSa/epzk/SVITwuU2EAntgQTvobAqwQ==.
+         Installed Testably.Abstractions.FileSystem.Interface 10.1.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\testably.abstractions.filesystem.interface\10.1.0 with content hash 0R+m7DvS2QuDcFOfDGtyGErRrgXOl4/z2tbNLX2RfvlYJjlVcKG+wMIBfZO8vxGtTNwNxffTG4ibFRwd0jkM7w==.
+         Installed Microsoft.NET.StringTools 17.12.6 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\microsoft.net.stringtools\17.12.6 with content hash w8Ehofqte5bJoR+Fa3f6JwkwFEkGtXxqvQHGOVOSHDzgNVySvL5FSNhavbQSZ864el9c3rjdLPLAtBW8dq6fmg==.
+         Installed System.Reflection.MetadataLoadContext 8.0.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\system.reflection.metadataloadcontext\8.0.0 with content hash SZxrQ4sQYnIcdwiO3G/lHZopbPYQ2lW0ioT4JezgccWUrKaKbHLJbAGZaDfkYjWcta1pWssAo3MOXLsR0ie4tQ==.
+         Installed TestableIO.System.IO.Abstractions.Wrappers 22.1.1 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\testableio.system.io.abstractions.wrappers\22.1.1 with content hash J91zmSwuMY75ybtkqAFMC3vDNMkLJ/kiDDLhORITEwTKNhEwEYfxAQGv+f0jGYZg/H0YbnGcx5Ky0FgFJwrrWQ==.
+         Installed TestableIO.System.IO.Abstractions.TestingHelpers 22.1.1 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\testableio.system.io.abstractions.testinghelpers\22.1.1 with content hash To7oYx68nrl0tu8duRSO9SyRHrNOVYSYIUlvfqNnoX9X2X9thIdJGmM3W3ZINtT4xqKuSy1Tb4hJK35Umhtfqg==.
+         Installed Microsoft.Build.Utilities.Core 17.12.6 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\microsoft.build.utilities.core\17.12.6 with content hash pU3GnHcXp8VRMGKxdJCq+tixfhFn+QwEbpqmZmc/nqFHFyuhlGwjonWZMIWcwuCv/8EHgxoOttFvna1vrN+RrA==.
+         Installed Microsoft.CodeCoverage 17.12.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\microsoft.codecoverage\17.12.0 with content hash 4svMznBd5JM21JIG2xZKGNanAHNXplxf/kQDFfLHXQ3OnpJkayRK/TjacFjA+EYmoyuNXHo/sOETEfcYtAzIrA==.
+         Installed Microsoft.TestPlatform.ObjectModel 17.12.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\microsoft.testplatform.objectmodel\17.12.0 with content hash TDqkTKLfQuAaPcEb3pDDWnh7b3SyZF+/W9OZvWFp6eJCIiiYFdSB6taE2I6tWrFw5ywhzOb6sreoGJTI6m3rSQ==.
+         Installed Microsoft.TestPlatform.TestHost 17.12.0 from https://api.nuget.org/v3/index.json to D:\DevTools\nuget_cache\microsoft.testplatform.testhost\17.12.0 with content hash MiPEJQNyADfwZ4pJNpQex+t9/jOClBGMiCiVVFuELCMSX2nmNfvUor3uFVxNNCg30uxDP8JDYfPnMXQzsfzYyg==.
+     1>D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+     1>D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+           GET https://api.nuget.org/v3/vulnerabilities/index.json
+           OK https://api.nuget.org/v3/vulnerabilities/index.json 199ms
+           GET https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/vulnerability.base.json
+           GET https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/2026.06.29.05.58.22/vulnerability.update.json
+           OK https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/vulnerability.base.json 220ms
+           OK https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/2026.06.29.05.58.22/vulnerability.update.json 227ms
+     1>D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+     1>D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+         All packages and projects are compatible with net10.0.
+         Committing restore...
+         Generating MSBuild file D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\BuildSystem.Tests.csproj.nuget.g.props.
+         Generating MSBuild file D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\BuildSystem.Tests.csproj.nuget.g.targets.
+         Writing assets file to disk. Path: D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\project.assets.json
+         Writing cache file to disk. Path: D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\project.nuget.cache
+         Persisting dg to D:\workspace\LearningNotes\Tests\BuildSystem.Tests\obj\BuildSystem.Tests.csproj.nuget.dgspec.json
+         Restored D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj (in 9.89 sec).
+         
+         NuGet Config files used:
+             D:\workspace\LearningNotes\Tests\NuGet.Config
+             C:\Users\userJay30\AppData\Roaming\NuGet\NuGet.Config
+             C:\Program Files (x86)\NuGet\Config\Microsoft.VisualStudio.FallbackLocation.config
+             C:\Program Files (x86)\NuGet\Config\Microsoft.VisualStudio.Offline.config
+         
+         Feeds used:
+             https://nuget.pkg.github.com/codeloverjay30/index.json
+             D:\workspace\MyLocalNuget\BlazorWebAssembly\
+             D:\workspace\MyLocalNuget\ClassLibrary\
+             D:\workspace\LearningNotes\Tests\local-packages
+             https://api.nuget.org/v3/index.json
+             C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+         
+         Installed:
+             29 package(s) to D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj
+       Done executing task "RestoreTask".
+     1>Done building target "Restore" in project "BuildSystem.Tests.csproj".
+     1>Done Building Project "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (Restore target(s)).
+
+Build succeeded.
+
+       "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj" (Restore target) (1) ->
+       (Restore target) -> 
+         D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+         D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+         D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+         D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+    4 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:10.92

@@ -1,0 +1,25 @@
+<Project>
+  <Target Name="RemoveVersions" BeforeTargets="CollectPackageReferences">
+    <ItemGroup>
+      <PackageReference Update="@(PackageReference)" 
+                      Version="" 
+                      Condition="'%(Identity)' != 'NETStandard.Library' And !$([System.String]::Copy('%(Identity)').StartsWith('Microsoft.Extensions.'))" />
+    </ItemGroup>
+  </Target>
+
+  <!-- The Target is triggered once NuGet completes to restore -->
+  <Target Name="ValidateCompatibilityPackageVersions" AfterTargets="_CheckForUnsupportedTargetFramework">
+    
+    <!-- Get all `<PackageVersion>`  -->
+    <ItemGroup>
+      <!-- If `NETStandard.Library package` is specified but its `Version` attribute is NOT specified or with incorrect value, then setting this tag and thus throws an error -->
+      <InvalidCompats Include="@(PackageVersion)" 
+                      Condition="'%(Identity)' == 'NETStandard.Library' And '%(Version)' == ''" />
+    </ItemGroup>
+
+    <!-- if `InvalidCompats` is set, throws an error -->
+    <Error Text="【架構警告】偵測到相容性套件 NETStandard.Library 未在中央明確指定版本號！請至 Directory.Packages.props 補上。" 
+           Code="ARCH001" 
+           Condition="'@(InvalidCompats)' != ''" />
+  </Target>
+</Project>

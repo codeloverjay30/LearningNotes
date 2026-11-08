@@ -1,0 +1,667 @@
+我在修改以下檔案後，
+
+
+
++ D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs
+
+
+
+單元測試還是不通過
+
+
+
+根據
+
+
+
++ 執行"D:\workspace\Scripts\List-All-EnvironmentVariables-NameAndValue.ps1"後的結果(在PowerShell互動中)
+
+
+
++ dotnet --info等結果(也在PowerShell互動中)
+
+
+
++ 日誌檔: D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem_Tests-msbuild-build.txt (建置的日誌)
+
+D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem_Tests-msbuild-restore.txt (還原的日誌)
+
+D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem_Tests-msbuild-test.txt (測試日誌)
+
+
+
++ 還有我剛剛加入的組態設定檔
+
+
+
+- global.json
+
+
+
+- nuget.config
+
+
+
+以及AI Agent規範組態檔
+
+
+
+- ai-rules.md
+
+
+
+- GEMINI.md
+
+
+
+- .clinerules
+
+
+
+以及 在`D:\workspace\LearningNotes\Tests`建立`local-packages`這個空目錄(MSBuild要求，若未建立則會拋錯誤，其錯誤訊息類似為`local-packages is not found`)
+
+
+
+針對以上組態檔的檔案內容詳見
+
+D:\workspace\LearningNotes\Tests\Root-Directory-Of-Container-That-Contains-Tests-for-LearningNotes-Directory-repomix-output.md
+
+
+
+該檔由Repomix工具所產生的，包含D:\workspace\LearningNotes\Tests\這個目錄的檔案結構和其檔案內容(若是檔案)
+
+
+
+PowerShell互動
+
+
+
+```PowerShell
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> dotnet nuget locals all --clear
+
+Clearing NuGet HTTP cache: D:\nuget\Local\http-cache
+
+Clearing NuGet global packages folder: D:\DevTools\nuget_cache
+
+Clearing NuGet Temp cache: C:\Users\userJay30\AppData\Local\Temp\NuGetScratch
+
+Clearing NuGet plugins cache: C:\Users\userJay30\AppData\Local\NuGet\plugins-cache
+
+Local resources cleared.
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> Get-ChildItem -Recurse bin,obj,artifacts,.artifacts | Remove-Item -Recurse
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> Remove-Item BuildSystem_Tests-msbuild-restore.txt
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> Remove-Item BuildSystem_Tests-msbuild-build.txt
+
+Remove-Item: Cannot find path 'D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem_Tests-msbuild-build.txt' because it does not exist.
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> Remove-Item BuildSystem_Tests-msbuild-test.txt
+
+Remove-Item: Cannot find path 'D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem_Tests-msbuild-test.txt' because it does not exist.
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> dotnet restore -fl -flp:"LogFile=BuildSystem_Tests-msbuild-restore.txt;verbosity=detailed;Append=false"
+
+Restore succeeded with 4 warning(s) in 11.1s
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+
+
+Build succeeded with 4 warning(s) in 11.6s
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> dotnet build -fl -flp:"logFile=BuildSystem_Tests-msbuild-build.txt;Append=false"
+
+Restore succeeded with 4 warning(s) in 0.6s
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+  BuildSystem.Tests net10.0 succeeded with 4 warning(s) (4.9s) → bin\Debug\net10.0\BuildSystem.Tests.dll
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+
+
+Build succeeded with 8 warning(s) in 6.4s
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> dotnet test -fl -flp:"logFile=BuildSystem_Tests-msbuild-test.txt;Append=false"
+
+Restore succeeded with 4 warning(s) in 0.5s
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+  BuildSystem.Tests net10.0 succeeded with 4 warning(s) (0.3s) → bin\Debug\net10.0\BuildSystem.Tests.dll
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 10.0.3)
+
+[xUnit.net 00:00:00.13]   Discovering: BuildSystem.Tests
+
+[xUnit.net 00:00:00.18]   Discovered:  BuildSystem.Tests
+
+[xUnit.net 00:00:00.19]   Starting:    BuildSystem.Tests
+
+[xUnit.net 00:00:00.53]     BuildSystem.Tests.DirectoryPackagesTests.All_Projects_Should_Enable_CentralPackageManagement [FAIL]
+
+[xUnit.net 00:00:00.53]       Microsoft.Build.Exceptions.InvalidProjectFileException : The SDK 'Microsoft.NET.SDK.WorkloadAutoImportPropsLocator' specified could not be found.  D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props
+
+[xUnit.net 00:00:00.54]       Stack Trace:
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject(String errorSubCategoryResourceName, IElementLocation elementLocation, String resourceName, Object[] args)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject[T1](IElementLocation elementLocation, String resourceName, T1 arg0)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImportsFromUnescapedImportExpressionConditioned(String directoryOfImportingFile, ProjectImportElement importElement, List`1& projects, SdkResult& sdkResult)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImports(String directoryOfImportingFile, ProjectImportElement importElement, SdkResult& sdkResult)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, Project project, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ILoggingService loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, IDirectoryCacheFactory directoryCacheFactory, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, EvaluationContext evaluationContext)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(EvaluationContext evaluationContext)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, Boolean interactive)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, IDirectoryCacheFactory directoryCacheFactory, Boolean interactive)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, ProjectCollection projectCollection)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName, IDictionary`2 globalProperties, String toolsVersion)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName, String toolsVersion)
+
+[xUnit.net 00:00:00.54]            at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName)
+
+[xUnit.net 00:00:00.54]         D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs(73,0): at BuildSystem.Tests.DirectoryPackagesTests.All_Projects_Should_Enable_CentralPackageManagement()
+
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+
+[xUnit.net 00:00:00.54]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+     Warning:
+
+     The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and
+
+     the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for
+
+     non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.
+
+     Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.
+
+     A paid commercial license supports the development and continued increasing support of
+
+     Fluent Assertions users under both commercial and community licenses. Help us
+
+     keep Fluent Assertions at the forefront of unit testing.
+
+     For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/
+
+[xUnit.net 00:00:00.61]   Finished:    BuildSystem.Tests
+
+  BuildSystem.Tests test net10.0 failed with 1 error(s) (2.0s)
+
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\bin\Debug\net10.0\BuildSystem.Tests.dll : error TESTERROR:
+
+      BuildSystem.Tests.DirectoryPackagesTests.All_Projects_Should_Enable_CentralPackageManagement (278ms): Error Messag
+
+      e: Microsoft.Build.Exceptions.InvalidProjectFileException : The SDK 'Microsoft.NET.SDK.WorkloadAutoImportPropsLoca
+
+      tor' specified could not be found.  D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.S
+
+      dk.ImportWorkloads.props
+
+      Stack Trace:
+
+         at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject(String errorSubCategoryResourceName, IEleme
+
+      ntLocation elementLocation, String resourceName, Object[] args)
+
+         at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject[T1](IElementLocation elementLocation, Strin
+
+      g resourceName, T1 arg0)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImportsFromUnescapedImportExpressionConditioned(String d
+
+      irectoryOfImportingFile, ProjectImportElement importElement, List`1& projects, SdkResult& sdkResult)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImports(String directoryOfImportingFile, ProjectImportEl
+
+      ement importElement, SdkResult& sdkResult)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportE
+
+      lement importElement)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportE
+
+      lement importElement)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportE
+
+      lement importElement)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportE
+
+      lement importElement)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+
+         at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+
+         at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, Project project, ProjectRootElement r
+
+      oot, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ILoggingSer
+
+      vice loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, IDirectoryCacheFactory director
+
+      yCacheFactory, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResol
+
+      verService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+
+         at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, Proje
+
+      ctLoadSettings loadSettings, EvaluationContext evaluationContext)
+
+         at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvalua
+
+      tion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+
+         at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvalua
+
+      tion, EvaluationContext evaluationContext)
+
+         at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(EvaluationContext evaluationContext)
+
+         at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersio
+
+      n, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, Boolean intera
+
+      ctive)
+
+         at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVer
+
+      sion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings, EvaluationC
+
+      ontext evaluationContext, IDirectoryCacheFactory directoryCacheFactory, Boolean interactive)
+
+         at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVer
+
+      sion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings)
+
+         at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVer
+
+      sion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings)
+
+         at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVer
+
+      sion, ProjectCollection projectCollection)
+
+         at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName, IDictionary`2 globalProperties, St
+
+      ring toolsVersion)
+
+         at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName, String toolsVersion)
+
+         at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName)
+
+         at BuildSystem.Tests.DirectoryPackagesTests.All_Projects_Should_Enable_CentralPackageManagement() in D:\workspa
+
+      ce\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs:line 73
+
+         at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+
+         at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+
+
+Test summary: total: 2, failed: 1, succeeded: 1, skipped: 0, duration: 1.9s
+
+Build failed with 1 error(s) and 8 warning(s) in 3.8s
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> dotnet --list-sdks
+
+10.0.3 [D:\DevTools\dotnet\sdk]
+
+10.0.103 [D:\DevTools\dotnet\sdk]
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> dotnet --list-runtimes
+
+Microsoft.AspNetCore.App 10.0.3 [D:\DevTools\dotnet\shared\Microsoft.AspNetCore.App]
+
+Microsoft.NETCore.App 10.0.3 [D:\DevTools\dotnet\shared\Microsoft.NETCore.App]
+
+Microsoft.WindowsDesktop.App 10.0.3 [D:\DevTools\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> dotnet --info
+
+.NET SDK:
+
+ Version:           10.0.103
+
+ Commit:            c2435c3e0f
+
+ Workload version:  10.0.100-manifests.a62d7899
+
+ MSBuild version:   18.0.11+c2435c3e0
+
+
+
+Runtime Environment:
+
+ OS Name:     Windows
+
+ OS Version:  10.0.26200
+
+ OS Platform: Windows
+
+ RID:         win-x64
+
+ Base Path:   D:\DevTools\dotnet\sdk\10.0.103\
+
+
+
+.NET workloads installed:
+
+There are no installed workloads to display.
+
+Configured to use workload sets when installing new manifests.
+
+No workload sets are installed. Run "dotnet workload restore" to install a workload set.
+
+
+
+Host:
+
+  Version:      10.0.3
+
+  Architecture: x64
+
+  Commit:       c2435c3e0f
+
+
+
+.NET SDKs installed:
+
+  10.0.3 [D:\DevTools\dotnet\sdk]
+
+  10.0.103 [D:\DevTools\dotnet\sdk]
+
+
+
+.NET runtimes installed:
+
+  Microsoft.AspNetCore.App 10.0.3 [D:\DevTools\dotnet\shared\Microsoft.AspNetCore.App]
+
+  Microsoft.NETCore.App 10.0.3 [D:\DevTools\dotnet\shared\Microsoft.NETCore.App]
+
+  Microsoft.WindowsDesktop.App 10.0.3 [D:\DevTools\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+
+
+Other architectures found:
+
+  x86   [C:\Program Files (x86)\dotnet]
+
+    registered at [HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x86\InstallLocation]
+
+
+
+Environment variables:
+
+  DOTNET_INSTALL_DIR                       [D:\DevTools\dotnet]
+
+  DOTNET_ROOT                              [D:\DevTools\dotnet]
+
+  DOTNET_ROOT(x64)                         [D:\DevTools\dotnet]
+
+
+
+global.json file:
+
+  D:\workspace\LearningNotes\Tests\global.json
+
+
+
+Learn more:
+
+  https://aka.ms/dotnet/info
+
+
+
+Download .NET:
+
+  https://aka.ms/dotnet/download
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> . "D:\workspace\Scripts\List-All-EnvironmentVariables-NameAndValue.ps1"
+
+
+
+Name                                        Value
+
+----                                        -----
+
+ANDROID_HOME                                C:\Users\userJay30\AppData\Local\Android\Sdk
+
+ANTLR4_TOOLS_ANTLR_VERSION                  4.13.2
+
+ChocolateyInstall                           C:\ProgramData\chocolatey
+
+ChocolateyLastPathUpdate                    134130229699153267
+
+ChocolateyToolsLocation                     C:\tools
+
+CLASSPATH                                   .
+
+                                            D:\workspace\Java\libs\antlr-4.13.2-complete.jar
+
+ComSpec                                     C:\WINDOWS\system32\cmd.exe
+
+DOTNET_INSTALL_DIR                          D:\DevTools\dotnet
+
+DOTNET_ROOT                                 D:\DevTools\dotnet
+
+DOTNET_ROOT(x64)                            D:\DevTools\dotnet
+
+DriverData                                  C:\Windows\System32\Drivers\DriverData
+
+GIT_LFS_PATH                                C:\Program Files\Git LFS
+
+GOPATH                                      C:\Users\userJay30\go
+
+IGCCSVC_DB                                  AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAEvIKsY4lzUu26MjV1zukHgQAAAACAAAAAAAQZgAAAAE
+
+                                            AACAAAAAypNz/+grT8QQhASf94KaEW26uKpQEkqhxJZnOILxLyQAAAAAOgAAAAAIAACAAAAB3R/
+
+                                            rDxtrK9lW7BtUKnVOgNMS32nd1e6d73cFRkB88YmAAAAAKXPH2lxyW9QjuHMN4tY9WHfDxgFENF
+
+                                            MlkpftdInHwfF2ephLjm3jxTtmzgXP6lbXbH5fuVWk1kja7Mn2QVkWbgECVnw5Ye28N4HmYNoDz
+
+                                            j8aa2OojlY9kJGZL1OaZdXxAAAAAQvE2oUyCA386LYS2crUT1ucNWCN9Jnnp6/nALou4lTJzd/w
+
+                                            Q0hjJ0spdUKV8a/1JjNM2VMMHYudy8WWmBVDTxA==
+
+MSBuildCustomBeforeMicrosoftCommonProps     D:\workspace\CustomBuildLogics\PreloadPropsEntry.props.entry
+
+MSBuildCustomBeforeMicrosoftCommonProps.bak D:\workspace\CustomBuildLogics\PreloadPropsEntry.props.entry
+
+MSBuildSDKsPath                             D:\DevTools\dotnet\sdk\10.0.103\Sdks
+
+MyPSModuleRootPath                          D:\workspace\Scripts\Modules
+
+MyPSScriptRootPath                          D:\workspace\Scripts
+
+NUGET_HTTP_CACHE_PATH                       D:\nuget\Local\http-cache
+
+NUGET_PACKAGES                              D:\DevTools\nuget_cache
+
+NUMBER_OF_PROCESSORS                        12
+
+OneDrive                                    C:\Users\userJay30\OneDrive
+
+OS                                          Windows_NT
+
+Path                                        D:\workspace\Java\libs
+
+                                            D:\DevTools\dotnet
+
+                                            D:\DebuggerTools\.NET\.local\share\netcoredbg
+
+                                            C:\Users\userJay30\AppData\Local\Microsoft\WindowsApps
+
+                                            C:\Program Files\Azure Data Studio\bin
+
+                                            C:\Users\userJay30\AppData\Local\Programs\Microsoft VS Code\bin
+
+                                            C:\Users\userJay30\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Micro
+
+                                            soft.Winget.Source_8wekyb3d8bbwe
+
+                                            C:\Users\userJay30\.dotnet\tools
+
+                                            C:\Users\userJay30\AppData\Local\Android\Sdk\platform-tools
+
+                                            C:\Program Files\nodejs\node_modules
+
+                                            C:\Users\userJay30\AppData\Local\Android\Sdk\platform-tools
+
+                                            C:\Users\userJay30\AppData\Local\Android\Sdk\build-tools
+
+                                            C:\Program Files\nodejs
+
+                                            C:\Users\userJay30\AppData\Roaming\npm
+
+                                            C:\Users\userJay30\go\bin
+
+                                            C:\Users\userJay30\AppData\Local\Python\bin
+
+
+
+PATHEXT                                     .COM
+
+                                            .EXE
+
+                                            .BAT
+
+                                            .CMD
+
+                                            .VBS
+
+                                            .VBE
+
+                                            .JS
+
+                                            .JSE
+
+                                            .WSF
+
+                                            .WSH
+
+                                            .MSC
+
+POWERSHELL_DISTRIBUTION_CHANNEL             MSI:Windows 10 Pro
+
+PROCESSOR_ARCHITECTURE                      AMD64
+
+PROCESSOR_IDENTIFIER                        Intel64 Family 6 Model 154 Stepping 4, GenuineIntel
+
+PROCESSOR_LEVEL                             6
+
+PROCESSOR_REVISION                          9a04
+
+PSModulePath                                C:\Program Files\WindowsPowerShell\Modules
+
+                                            C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+
+                                            C:\Program Files (x86)\Microsoft SQL Server\160\Tools\PowerShell\Modules\
+
+                                            D:\workspace\Scripts\Modules
+
+                                            D:\workspace\Scripts\Modules\CommonUtilityServices
+
+                                            D:\workspace\Scripts\Modules\ProcessUtilityServices
+
+
+
+TEMP                                        C:\Users\userJay30\AppData\Local\Temp
+
+TMP                                         C:\Users\userJay30\AppData\Local\Temp
+
+USERNAME                                    SYSTEM
+
+USERPORFILE                                 C:\UserProfile
+
+windir                                      C:\WINDOWS
+
+ZES_ENABLE_SYSMAN                           1
+
+
+
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests>
+
+```

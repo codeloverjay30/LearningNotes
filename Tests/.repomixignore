@@ -1,0 +1,65 @@
+# Add patterns to ignore here, one per line
+
+# cached
+## cached about .NET
+bin/
+obj/
+
+# configuration
+## configuration
+*.json
+*.json5
+
+## configuration about VSC workspace
+.vscode/
+
+## configuration about VS workspace
+.vs/
+
+## configuration about VS in .NET project
+.vssetting/
+.vssettings
+
+## configuration about Docker
+DockerFile
+**/DockerFile
+
+.devcontainer/
+
+# log
+## logs
+*.log
+*.txt
+
+# introduction
+## introduction of .NET project
+README.md
+
+## others
+*.md
+
+# rule
+## AI Gemini SDK assistant
+GEMINI.md
+ai.md
+
+## cline
+.clinerules
+
+# backup
+## backups
+*.bak
+
+# script
+## powershell script
+*.ps1
+*.psm1
+
+## command
+*.cmd
+
+## batch file
+*.bat
+
+## executable file
+*.exe

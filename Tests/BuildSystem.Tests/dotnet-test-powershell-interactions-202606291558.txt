@@ -1,0 +1,240 @@
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests> . "D:\workspace\LearningNotes\Tests\BuildSystem.Tests\auto-unit-tests.ps1"
+Change current working directory to D:\workspace\LearningNotes\Tests successfully
+Delete Root-Directory-Of-Container-That-Contains-Tests-for-LearningNotes-Directory-repomix-output.md successfully
+
+📦 Repomix v1.14.0
+
+✔ Packing completed successfully!
+
+📈 Top 5 Files by Token Count:
+──────────────────────────────
+1.  BuildSystem.Tests/DirectoryPackagesTests.cs (2,728 tokens, 12,973 chars, 59%)
+2.  BuildSystem.Tests/ProjectCollectionExtension.cs (353 tokens, 1,708 chars, 7.6%)
+3.  BuildSystem.Tests/BuildSystem.Tests.csproj (277 tokens, 991 chars, 6%)
+4.  .repomixignore (190 tokens, 671 chars, 4.1%)
+5.  nuget.config (178 tokens, 644 chars, 3.9%)
+
+🔎 Security Check:
+──────────────────
+✔ No suspicious files detected.
+
+
+📊 Pack Summary:
+────────────────
+  Total Files: 13 files
+ Total Tokens: 4,621 tokens
+  Total Chars: 20,958 chars
+       Output: Root-Directory-Of-Container-That-Contains-Tests-for-LearningNotes-Directory-repomix-output.md
+     Security: ✔ No suspicious files detected
+
+🎉 All Done!
+Your repository has been successfully packed.
+
+💡 Repomix is now available in your browser! Try it at https://repomix.com
+Change current working directory to D:\workspace\LearningNotes\Tests\BuildSystem.Tests successfully
+Delete BuildSystem.Tests-test-project-repomix-output.md successfully
+Delete D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem_Tests-msbuild-restore.txt successfully
+Delete D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem_Tests-msbuild-build.txt successfully
+Delete D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem_Tests-msbuild-test.txt successfully
+
+📦 Repomix v1.14.0
+
+✔ Packing completed successfully!
+
+📈 Top 5 Files by Token Count:
+──────────────────────────────
+1.  dotnet-test-powershell-interactions-2026061339.txt (7,207 tokens, 31,805 chars, 50.5%)
+2.  DirectoryPackagesTests.cs (2,728 tokens, 12,973 chars, 19.1%)
+3.  auto-unit-tests.ps1 (1,124 tokens, 4,567 chars, 7.9%)
+4.  修改以下檔案後說明(2).txt (444 tokens, 1,132 chars, 3.1%)
+5.  ProjectCollectionExtension.cs (353 tokens, 1,708 chars, 2.5%)
+
+🔎 Security Check:
+──────────────────
+✔ No suspicious files detected.
+
+
+📊 Pack Summary:
+────────────────
+  Total Files: 18 files
+ Total Tokens: 14,282 tokens
+  Total Chars: 61,554 chars
+       Output: BuildSystem.Tests-test-project-repomix-output.md
+     Security: ✔ No suspicious files detected
+
+🎉 All Done!
+Your repository has been successfully packed.
+
+💡 Repomix is now available in your browser! Try it at https://repomix.com
+Change current working directory to D:\workspace\LearningNotes\Tests\BuildSystem.Tests successfully
+Clearing NuGet HTTP cache: D:\nuget\Local\http-cache
+Clearing NuGet global packages folder: D:\DevTools\nuget_cache
+Clearing NuGet Temp cache: C:\Users\userJay30\AppData\Local\Temp\NuGetScratch
+Clearing NuGet plugins cache: C:\Users\userJay30\AppData\Local\NuGet\plugins-cache
+Local resources cleared.
+Successfully clear all local cached packages
+Restore succeeded with 4 warning(s) in 11.2s
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+
+Build succeeded with 4 warning(s) in 11.9s
+Successfully restore D:\workspace\LearningNotes\Tests\BuildSystem.Tests
+Restore succeeded with 4 warning(s) in 0.5s
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+  BuildSystem.Tests net10.0 succeeded with 6 warning(s) (1.5s) → bin\Debug\net10.0\BuildSystem.Tests.dll
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DictionaryExtensions.cs(4,39): warning CS8714: The type 'TKey' cannot be used as type parameter 'TKey' in the generic type or method 'Dictionary<TKey, TValue>'. Nullability of type argument 'TKey' doesn't match 'notnull' constraint.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\ProjectCollectionExtension.cs(14,9): warning CA2264: Calling 'ArgumentNullException.ThrowIfNull' and passing a non-nullable value is a no-op (https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2264)
+
+Build succeeded with 10 warning(s) in 3.0s
+Successfully build D:\workspace\LearningNotes\Tests\BuildSystem.Tests
+Restore succeeded with 4 warning(s) in 0.5s
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+  BuildSystem.Tests net10.0 succeeded with 4 warning(s) (0.2s) → bin\Debug\net10.0\BuildSystem.Tests.dll
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build (>= 17.12.0) but Microsoft.Build 17.12.0 was not found. Microsoft.Build 17.12.6 was resolved instead.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1603: BuildSystem.Tests depends on Microsoft.Build.Utilities.Core (>= 17.12.0) but Microsoft.Build.Utilities.Core 17.12.0 was not found. Microsoft.Build.Utilities.Core 17.12.6 was resolved instead.
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\BuildSystem.Tests.csproj : warning NU1903: Package 'Microsoft.Build.Utilities.Core' 17.12.6 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3q9-fxm7-j8fq
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 10.0.3)
+[xUnit.net 00:00:00.17]   Discovering: BuildSystem.Tests
+[xUnit.net 00:00:00.23]   Discovered:  BuildSystem.Tests
+[xUnit.net 00:00:00.24]   Starting:    BuildSystem.Tests
+     Warning:
+     The component "Fluent Assertions" is governed by the rules defined in the Xceed License Agreement and
+     the Xceed Fluent Assertions Community License. You may use Fluent Assertions free of charge for
+     non-commercial use only. An active subscription is required to use Fluent Assertions for commercial use.
+     Please contact Xceed Sales mailto:sales@xceed.com to acquire a subscription at a very low cost.
+     A paid commercial license supports the development and continued increasing support of
+     Fluent Assertions users under both commercial and community licenses. Help us
+     keep Fluent Assertions at the forefront of unit testing.
+     For more information, visit https://xceed.com/products/unit-testing/fluent-assertions/
+[xUnit.net 00:00:00.70]     BuildSystem.Tests.DirectoryPackagesTests.OptimizedVersion_AllProjectsShouldEnableCentralPackageManagementInDWorkspaceLearningNotes [FAIL]
+[xUnit.net 00:00:00.70]       Did not expect System.Exception because the project collection should be isolated from environment side-effects, but found Microsoft.Build.Exceptions.InvalidProjectFileException: The SDK 'Microsoft.NET.SDK.WorkloadAutoImportPropsLocator' specified could not be found.  D:\DevTools\dotnet\sdk\10.0.103\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject(String errorSubCategoryResourceName, IElementLocation elementLocation, String resourceName, Object[] args)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject[T1](IElementLocation elementLocation, String resourceName, T1 arg0)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImportsFromUnescapedImportExpressionConditioned(String directoryOfImportingFile, ProjectImportElement importElement, List`1& projects, SdkResult& sdkResult)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImports(String directoryOfImportingFile, ProjectImportElement importElement, SdkResult& sdkResult)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, Project project, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ILoggingService loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, IDirectoryCacheFactory directoryCacheFactory, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverService sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, EvaluationContext evaluationContext)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(EvaluationContext evaluationContext)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, Boolean interactive)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, IDirectoryCacheFactory directoryCacheFactory, Boolean interactive)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, ProjectCollection projectCollection)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName, IDictionary`2 globalProperties, String toolsVersion)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName, String toolsVersion)
+[xUnit.net 00:00:00.70]          at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName)
+[xUnit.net 00:00:00.70]          at BuildSystem.Tests.DirectoryPackagesTests.<>c__DisplayClass10_0.<OptimizedVersion_AllProjectsShouldEnableCentralPackageManagementInDWorkspaceLearningNotes>b__0() in D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs:line 171
+[xUnit.net 00:00:00.70]          at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+[xUnit.net 00:00:00.70]          at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+[xUnit.net 00:00:00.71]       Stack Trace:
+[xUnit.net 00:00:00.71]            at FluentAssertions.Specialized.DelegateAssertionsBase`2.NotThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+[xUnit.net 00:00:00.71]            at FluentAssertions.Specialized.DelegateAssertions`2.NotThrow[TException](String because, Object[] becauseArgs)
+[xUnit.net 00:00:00.71]         D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs(180,0): at BuildSystem.Tests.DirectoryPackagesTests.OptimizedVersion_AllProjectsShouldEnableCentralPackageManagementInDWorkspaceLearningNotes()
+[xUnit.net 00:00:00.71]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:00.71]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.72]     BuildSystem.Tests.DirectoryPackagesTests.ShouldFindCorrectPathOfCentralConfiguration [FAIL]
+[xUnit.net 00:00:00.72]       Expected directoryExists to be True because `D:\workspace\LearningNotes\Tests\Examples\Ex1\Ex1-1\MeProject1` does not exists., but found False.
+[xUnit.net 00:00:00.72]       Stack Trace:
+[xUnit.net 00:00:00.72]            at FluentAssertions.Primitives.BooleanAssertions`1.BeTrue(String because, Object[] becauseArgs)
+[xUnit.net 00:00:00.72]         D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs(195,0): at BuildSystem.Tests.DirectoryPackagesTests.ShouldFindCorrectPathOfCentralConfiguration()
+[xUnit.net 00:00:00.72]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:00.72]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.78]     BuildSystem.Tests.DirectoryPackagesTests.Should_Have_CentralPackageManagement_Enabled [FAIL]
+[xUnit.net 00:00:00.78]       Expected managePackageValue to be "true" with a length of 4 because 因為我們在架構上強制要求所有專案必須啟用中央套件管理 (CPM), but "false" has a length of 5, differs near "fal" (index 0).
+[xUnit.net 00:00:00.78]       Stack Trace:
+[xUnit.net 00:00:00.78]            at FluentAssertions.Primitives.StringAssertions`1.Be(String expected, String because, Object[] becauseArgs)
+[xUnit.net 00:00:00.78]         D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs(102,0): at BuildSystem.Tests.DirectoryPackagesTests.Should_Have_CentralPackageManagement_Enabled()
+[xUnit.net 00:00:00.78]            at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+[xUnit.net 00:00:00.78]            at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+[xUnit.net 00:00:00.78]   Finished:    BuildSystem.Tests
+  BuildSystem.Tests test net10.0 failed with 3 error(s) (2.0s)
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs(180): error TESTERROR:
+      BuildSystem.Tests.DirectoryPackagesTests.OptimizedVersion_AllProjectsShouldEnableCentralPackageManagementInDWorkspaceLearningNotes (365ms): Error Message: Did not expect System.Exception because the project collection should be iso
+      lated from environment side-effects, but found Microsoft.Build.Exceptions.InvalidProjectFileException: The SDK 'Microsoft.NET.SDK.WorkloadAutoImportPropsLocator' specified could not be found.  D:\DevTools\dotnet\sdk\10.0.103\Sdks\M
+      icrosoft.NET.Sdk\targets\Microsoft.NET.Sdk.ImportWorkloads.props
+         at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject(String errorSubCategoryResourceName, IElementLocation elementLocation, String resourceName, Object[] args)
+         at Microsoft.Build.Shared.ProjectErrorUtilities.ThrowInvalidProject[T1](IElementLocation elementLocation, String resourceName, T1 arg0)
+         at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImportsFromUnescapedImportExpressionConditioned(String directoryOfImportingFile, ProjectImportElement importElement, List`1& projects, SdkResult& sdkResult)
+         at Microsoft.Build.Evaluation.Evaluator`4.ExpandAndLoadImports(String directoryOfImportingFile, ProjectImportElement importElement, SdkResult& sdkResult)
+         at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+         at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+         at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+         at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+         at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+         at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+         at Microsoft.Build.Evaluation.Evaluator`4.EvaluateImportElement(String directoryOfImportingFile, ProjectImportElement importElement)
+         at Microsoft.Build.Evaluation.Evaluator`4.PerformDepthFirstPass(ProjectRootElement currentProjectOrImport)
+         at Microsoft.Build.Evaluation.Evaluator`4.Evaluate()
+         at Microsoft.Build.Evaluation.Evaluator`4.Evaluate(IEvaluatorData`4 data, Project project, ProjectRootElement root, ProjectLoadSettings loadSettings, Int32 maxNodeCount, PropertyDictionary`1 environmentProperties, ILoggingServic
+      e loggingService, IItemFactory`2 itemFactory, IToolsetProvider toolsetProvider, IDirectoryCacheFactory directoryCacheFactory, ProjectRootElementCacheBase projectRootElementCache, BuildEventContext buildEventContext, ISdkResolverSer
+      vice sdkResolverService, Int32 submissionId, EvaluationContext evaluationContext, Boolean interactive)
+         at Microsoft.Build.Evaluation.Project.ProjectImpl.Reevaluate(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+         at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext)
+         at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(ILoggingService loggingServiceForEvaluation, EvaluationContext evaluationContext)
+         at Microsoft.Build.Evaluation.Project.ProjectImpl.ReevaluateIfNecessary(EvaluationContext evaluationContext)
+         at Microsoft.Build.Evaluation.Project.ProjectImpl.Initialize(IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectLoadSettings loadSettings, EvaluationContext evaluationContext, Boolean interacti
+      ve)
+         at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings, EvaluationCont
+      ext evaluationContext, IDirectoryCacheFactory directoryCacheFactory, Boolean interactive)
+         at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, String subToolsetVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings)
+         at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, ProjectCollection projectCollection, ProjectLoadSettings loadSettings)
+         at Microsoft.Build.Evaluation.Project..ctor(String projectFile, IDictionary`2 globalProperties, String toolsVersion, ProjectCollection projectCollection)
+         at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName, IDictionary`2 globalProperties, String toolsVersion)
+         at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName, String toolsVersion)
+         at Microsoft.Build.Evaluation.ProjectCollection.LoadProject(String fileName)
+         at BuildSystem.Tests.DirectoryPackagesTests.<>c__DisplayClass10_0.<OptimizedVersion_AllProjectsShouldEnableCentralPackageManagementInDWorkspaceLearningNotes>b__0() in D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryP
+      ackagesTests.cs:line 171
+         at FluentAssertions.Specialized.ActionAssertions.InvokeSubject()
+         at FluentAssertions.Specialized.DelegateAssertions`2.InvokeSubjectWithInterception().
+      Stack Trace:
+         at FluentAssertions.Specialized.DelegateAssertionsBase`2.NotThrowInternal[TException](Exception exception, String because, Object[] becauseArgs)
+         at FluentAssertions.Specialized.DelegateAssertions`2.NotThrow[TException](String because, Object[] becauseArgs)
+         at BuildSystem.Tests.DirectoryPackagesTests.OptimizedVersion_AllProjectsShouldEnableCentralPackageManagementInDWorkspaceLearningNotes() in D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs:line 180
+         at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+         at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs(195): error TESTERROR:
+      BuildSystem.Tests.DirectoryPackagesTests.ShouldFindCorrectPathOfCentralConfiguration (7ms): Error Message: Expected directoryExists to be True because `D:\workspace\LearningNotes\Tests\Examples\Ex1\Ex1-1\MeProject1` does not exists
+      ., but found False.
+      Stack Trace:
+         at FluentAssertions.Primitives.BooleanAssertions`1.BeTrue(String because, Object[] becauseArgs)
+         at BuildSystem.Tests.DirectoryPackagesTests.ShouldFindCorrectPathOfCentralConfiguration() in D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs:line 195
+         at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+         at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+    D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs(102): error TESTERROR:
+      BuildSystem.Tests.DirectoryPackagesTests.Should_Have_CentralPackageManagement_Enabled (69ms): Error Message: Expected managePackageValue to be "true" with a length of 4 because 因為我們在架構上強制要求所有專案必須啟用中央套件管理 (CPM), but "false" has a le
+      ngth of 5, differs near "fal" (index 0).
+      Stack Trace:
+         at FluentAssertions.Primitives.StringAssertions`1.Be(String expected, String because, Object[] becauseArgs)
+         at BuildSystem.Tests.DirectoryPackagesTests.Should_Have_CentralPackageManagement_Enabled() in D:\workspace\LearningNotes\Tests\BuildSystem.Tests\DirectoryPackagesTests.cs:line 102
+         at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+         at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+Test summary: total: 3, failed: 3, succeeded: 0, skipped: 0, duration: 1.9s
+Build failed with 3 error(s) and 8 warning(s) in 3.8s
+Failed to pass one or more test cases at D:\workspace\LearningNotes\Tests\BuildSystem.Tests
+And thus it will stop and return.
+PS D:\workspace\LearningNotes\Tests\BuildSystem.Tests>

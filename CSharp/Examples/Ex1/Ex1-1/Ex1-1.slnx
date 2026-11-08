@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="MeProject1/MeProject1.csproj" />
+  <Project Path="MeProject2/MeProject2.csproj" />
+  <Project Path="ReflectionUtilityServices/ReflectionUtilityServices.csproj" />
+</Solution>

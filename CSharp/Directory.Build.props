@@ -1,0 +1,110 @@
+﻿<Project>
+  <ImportGroup>
+    <Import Project="$(MSBuildThisFileDirectory)\PreloadPropsEntry.props.entry.config" Condition="Exists('$(MSBuildThisFileDirectory)\PreloadPropsEntry.props.entry.config')" />
+  </ImportGroup>
+  <PropertyGroup>
+    <Authors>codeloverjay30</Authors>
+    <IsClassLibraryPackage>true</IsClassLibraryPackage>
+    <IsBlazorWasmPackage>false</IsBlazorWasmPackage>
+    <PackageRootPath>$(MSBuildThisFileDirectory)</PackageRootPath>
+    <!-- Default path of local NuGet package that will be packed -->
+    <MyNuGetPackageOutputPath>$(PackageRootPath)..\..\MyLocalNuget\ClassLibrary</MyNuGetPackageOutputPath>
+  </PropertyGroup>
+  <Choose> 
+    <When Condition="'$(IsClassLibraryPackage)' == 'true'">
+      <!-- The package is class library or not -->
+      <PropertyGroup>
+        <MyNuGetPackageOutputPath>$(PackageRootPath)..\..\MyLocalNuget\ClassLibrary</MyNuGetPackageOutputPath>
+      </PropertyGroup>
+    </When>
+    <!-- The package is used for Blazor WebAssembly or not -->
+    <When Condition="'$(IsBlazorWasmPackage)' == 'true'">
+      <PropertyGroup>
+        <MyNuGetPackageOutputPath>$(PackageRootPath)..\..\MyLocalNuget\BlazorWebAssembly</MyNuGetPackageOutputPath>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <MyNuGetPackageOutputPath>$(PackageRootPath)..\..\MyLocalNuget\ClassLibrary</MyNuGetPackageOutputPath>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+  <PropertyGroup>
+    <PackageOutputPath>$(MyNuGetPackageOutputPath)</PackageOutputPath>
+    <PackageId>$(MSBuildProjectName)</PackageId>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageTags>Utility Service</PackageTags>
+    <Description>See README.md</Description>
+    <PackageReleaseNotes>See README.md</PackageReleaseNotes>
+    <!-- <PackageReadmeFile>$(ProjectDir)README.md</PackageReadmeFile> -->
+    <RepositoryUrl>https://github.com/codeloverjay30/utility_packages</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+  <!-- define property that belongs to framework at .NET SDK 6.0 -->
+  <PropertyGroup>
+    <IsAtLeastNet6>false</IsAtLeastNet6>  
+    <IsAtLeastNet6 Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp' And $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), '6.0'))">true</IsAtLeastNet6>
+  </PropertyGroup>
+  <!-- define property that belongs to legacy framework -->
+  <PropertyGroup>
+    <IsLegacyFramework>true</IsLegacyFramework>  
+    <IsLegacyFramework Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp' And $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), '6.0'))">false</IsLegacyFramework>
+  </PropertyGroup>
+  <!-- define property that belongs to framework at .NET SDK 8.0 -->
+  <PropertyGroup>
+    <IsAtLeastNet8>false</IsAtLeastNet8>  
+    <IsAtLeastNet8 Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp' And $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), '8.0'))">true</IsAtLeastNet8>
+  </PropertyGroup>
+  <Choose>
+      <When Condition="'$(IsAtLeastNet6)'=='true'">
+        <PropertyGroup>
+          <ImplicitUsings>enable</ImplicitUsings>
+          <Nullable>enable</Nullable>
+        </PropertyGroup>
+      </When>
+      <Otherwise>
+        <PropertyGroup>
+          <ImplicitUsings>disable</ImplicitUsings>
+          <Nullable>disable</Nullable>
+        </PropertyGroup>
+      </Otherwise>
+  </Choose>
+  <PropertyGroup>
+    <!-- set is as packable by default -->
+    <IsPackable>true</IsPackable>
+    
+    <!-- If the project contains "Test", "Demo", or "Sample", set it as unpackable -->
+    <IsTestProject Condition="$(MSBuildProjectName.Contains('Test'))">true</IsTestProject>
+    <IsDemoProject Condition="$(MSBuildProjectName.Contains('Demo'))">true</IsDemoProject>
+    <IsSampleProject Condition="$(MSBuildProjectName.Contains('Sample'))">true</IsSampleProject>
+  
+    <!-- indicates that project is experimental -->
+    <IsExperimental Condition="$(MSBuildProjectDirectory.Contains('experiments'))">true</IsExperimental>
+
+    <!-- indicates that project is stable -->
+    <IsStable Condition="$(MSBuildProjectDirectory.Contains('modules'))">true</IsStable>
+
+    <!-- indicates that project is stable and is module -->
+    <IsModule Condition="$(MSBuildProjectDirectory.Contains('modules'))">true</IsModule>
+
+    <!-- indicates that project is stable class library -->
+    <IsClassLibrary Condition="'$(IsTestProject)' == 'true' Or '$(IsDemoProject)' == 'true' Or '$(IsSampleProject)' == 'true'">false</IsClassLibrary>
+
+    <!-- set it as packable iff it is a class library and it is stable. Otherwise, set is unpackable -->
+    <IsPackable Condition="('$(IsStable)' != 'true' And '$(IsModule)' != 'true') Or ('$(IsClassLibrary)' == 'false')">false</IsPackable>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(IsModule)' == 'true' And ( '$(IsClassLibrary)' == 'true' Or '$(IsTestProject)' == 'true')">
+    <!-- build target path -->
+    <OutputPath>$(SolutionDir)\artifacts\$(Configuration)\</OutputPath>
+  </PropertyGroup>
+  <!-- is it class library and is .NET SDK 8.0+ -->
+  <PropertyGroup Condition="'$(IsAtLeastNet8)' == 'true' And '$(IsClassLibrary)' == 'true'">
+    <!-- set the build target to put into artifacts path(see`<ArtifactsPath>`), indicating VSCode launcher (`.vscode/launch.json`) uses build target which placed in `<ArtifactsPath>`-->
+    <UseArtifactsOutput>true</UseArtifactsOutput>
+    <!-- artifacts path -->
+    <ArtifactsPath>$(PackageRootPath).artifacts</ArtifactsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Condition="'$(IsPackable)' == 'true'" Include="$(ProjectDir)README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>
